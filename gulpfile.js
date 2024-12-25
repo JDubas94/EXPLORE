@@ -8,6 +8,7 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 
 
+
 function browsersync() {
     browserSync.init({
         server: {
@@ -83,6 +84,6 @@ exports.browsersync = browsersync;
 exports.images = images;
 exports.cleanDist = cleanDist;
 exports.watching = watching;
-exports.build = series(cleanDist, images, build);
 
+exports.build = series(cleanDist, images, build);
 exports.default = parallel(styles, scripts, browsersync, watching);

@@ -3,6 +3,212 @@
 @import 'reset';
 @import 'global';
 
+.header {
+    background-image: url('../images/fon-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0 177px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 113px;
+        margin-left: 47px;
+    }
+
+    &__btn {
+        width: 200px;
+        height: 58px;
+        background-color: transparent;
+        border: 1px solid #F06F59;
+        border-radius: 10px;
+    }
+}
+
+.header-content {
+    &__inner {
+        margin-bottom: 214px;
+    }
+
+    &__title {
+        font-size: 64px;
+        max-width: 750px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        max-width: 705px;
+        margin-bottom: 48px;
+    }
+
+    &__link {
+        padding: 18px 54px;
+        color: #FFFFFF;
+        background-color: $accent;
+        border-radius: 10px;
+    }
+
+    &__search {
+        width: 702px;
+        height: 68px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 12px 25px;
+    }
+
+    &__form-search,
+    &__form-data {
+        padding-inline: 65px 25px;
+        position: relative;
+    }
+
+    &__form-search::before,
+    &__form-data::before {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 0;
+        top: 0;
+        background-color: #BABA00;
+        border-radius: 50%;
+    }
+
+    &__form-search::before {
+        background-image: url('../images/icon/location_on.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__form-data::before {
+        background-image: url('../images/icon/callendar.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__form-search::after,
+    &__form-data::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 56px;
+        background-color: #C4C4C4;
+        right: 0;
+        top: 0;
+    }
+
+    &__form-search::placeholder,
+    &__form-data::placeholder {
+        color: #C4C4C4;
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 4px;
+        @extend %quicksand-700;
+    }
+
+    &__input-search {
+        width: 223px;
+        height: 25px;
+    }
+
+    &__input-data {
+        width: 139px;
+        height: 27px;
+    }
+
+    &__btn-search {
+        width: 62px;
+        height: 62px;
+        background-color: $accent;
+        border-radius: 5px;
+        border: none;
+        position: relative;
+    }
+
+    &__btn-search::before {
+        content: '';
+        position: absolute;
+        width: 46px;
+        height: 46px;
+        background-image: url('../images/icon/search.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 8px;
+        right: 8px;
+    }
+}
+
+
+.menu {
+    &__list {
+        display: flex
+    }
+
+    &__list-item+.menu__list-item {
+        margin-left: 97px;
+    }
+
+    &__item-link {
+        color: #000000;
+    }
+}
+
+.footer {
+    padding: 73px 0 65px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo-link {
+        margin-bottom: 10px;
+        width: 123px;
+        height: 120px;
+    }
+
+    &__title {
+        font-size: 24px;
+        @extend %quicksand-700;
+        margin-bottom: 20px;
+    }
+
+    &__list-item {
+        margin-bottom: 10px;
+    }
+
+    &__item-link {
+        color: #000000;
+    }
+
+    &__title-social {
+        margin-bottom: 12px;
+    }
+
+    &__list-social {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item-social {
+        margin-right: 10px;
+        width: 38px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 
 
