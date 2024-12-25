@@ -165,6 +165,7 @@
 
 .footer {
     padding: 73px 0 65px;
+    background-color: $foncolor;
 
     &__inner {
         display: flex;
@@ -207,6 +208,65 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+.about-us {
+    padding: 119px 100px;
+    background-color: $foncolor;
+
+    &__title {
+        @extend %title;
+        margin-bottom: 20px;
+    }
+
+    &__text-top {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__item {
+        max-width: 420px;
+        height: 414px;
+        padding: 196px 43px 90px;
+        text-align: center;
+        background-color: #FFFFFF;
+        position: relative;
+    }
+
+    &__item::after {
+        content: '';
+        position: absolute;
+        top: 50px;
+        left: 152px;
+        width: 116px;
+        height: 116px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.24);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__item--partners::after {
+        background-image: url('../images/icon/partners-icon.svg');
+    }
+
+    &__item--support::after{
+        background-image: url('../images/icon/support-icon.svg');
+    }
+    &__item--travel::after{
+        background-image: url('../images/icon/travel-icon.svg');
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        margin-bottom: 15px;
     }
 }
 

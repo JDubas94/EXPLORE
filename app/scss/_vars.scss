@@ -1,4 +1,5 @@
 $accent: #F06F59;
+$foncolor: #F5F5F5;
 
 
 %quicksand-400 {
@@ -8,4 +9,9 @@ $accent: #F06F59;
 %quicksand-700 {
     font-family: 'Quicksand-Bold', sans-serif;
     font-weight: 700;
+}
+%title{
+    font-size: 48px;
+    @extend %quicksand-700;
+    text-align: center;
 }
