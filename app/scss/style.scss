@@ -2,6 +2,7 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
+@import 'libs';
 
 .header {
     background-image: url('../images/fon-header.jpg');
@@ -165,7 +166,6 @@
 
 .footer {
     padding: 73px 0 65px;
-    background-color: $foncolor;
 
     &__inner {
         display: flex;
@@ -213,7 +213,6 @@
 
 .about-us {
     padding: 119px 100px;
-    background-color: $foncolor;
 
     &__title {
         @extend %title;
@@ -257,10 +256,11 @@
         background-image: url('../images/icon/partners-icon.svg');
     }
 
-    &__item--support::after{
+    &__item--support::after {
         background-image: url('../images/icon/support-icon.svg');
     }
-    &__item--travel::after{
+
+    &__item--travel::after {
         background-image: url('../images/icon/travel-icon.svg');
     }
 
@@ -270,6 +270,116 @@
     }
 }
 
+.vouchers-slider {
+    &__title {
+        @extend %title;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__items {
+        position: relative;
+        display: flex;
+        gap: 15px;
+        padding-bottom: 130px;
+        overflow: hidden;
+    }
+    &__item{
+        margin-right: 15px;
+    }
+
+    &__img-box {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    &__item-img {
+        width: 270px;
+        height: 361px;
+    }
+
+    &__item-price {
+        position: absolute;
+        @extend %quicksand-700;
+        color: #FFFFFF;
+        top: 20px;
+        left: 20px;
+    }
+
+    &__item-day {
+        position: absolute;
+        color: #FFFFFF;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    &__subtitle {
+        @extend %quicksand-700;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    &__item-location {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__item-country{
+        padding-left: 29px;
+        margin-right: 10px;
+        position: relative;
+    }
+    &__item-country::before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/icon/location-icon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 24px;
+    }
+    &__item-btn{
+        width: 172px;
+        height: 58px;
+        background-color: transparent;
+        border-radius: 10px;
+}
+}
+
+.rating {
+    display: flex;
+    &__value {
+        display: block;
+        width: 24px;
+        height: 26px;
+        margin-left: 10px;
+    }
+}
+.slick-prev,
+.slick-next{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: $slickArrow;
+    border-radius: 50%;
+    border: none;
+    bottom: 0;
+    left: 55%;
+}
+.slick-prev{
+    left: 50%;
+}
+.slick-disabled {
+    background-color: $accent;
+}
+.slick-prev.active, .slick-next.active {
+    background-color: $accent;
+}
 
 
 @import 'media';

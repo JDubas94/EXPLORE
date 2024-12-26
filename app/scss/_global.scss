@@ -8,6 +8,7 @@ body{
     font-size: 18px;
     @extend %quicksand-400;
     color: #000000;
+    background-color: $foncolor;
 }
 .container{
     max-width: 1330px;
