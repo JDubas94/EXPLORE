@@ -1,20 +1,23 @@
 html,
 body {
     height: 100%;
+    scrollbar-gutter: stable;
 }
 
 
-body{
+body {
     font-size: 18px;
     @extend %quicksand-400;
     color: #000000;
     background-color: $foncolor;
 }
-.container{
+
+.container {
     max-width: 1330px;
     padding: 0 15px;
     margin: 0 auto;
 }
+
 .logo {
     width: 123px;
     height: 120px;
@@ -24,3 +27,126 @@ body{
     }
 }
 
+.popup-social {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__item {
+        width: 144px;
+        height: 42px;
+        border: 1px solid $borderColor;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        position: relative;
+
+    }
+
+    &__link {
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.checkbox{
+        display: flex;
+        margin-bottom: 15px;
+
+    &__input {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        position: absolute;
+
+        &:checked+.checkbox__span {
+            background-image: url('../images/icon/check-on.svg');
+            background-color: $accent;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+        }
+    }
+
+    &__span {
+        display: block;
+        position: relative;
+        width: 18px;
+        height: 18px;
+        margin-right: 18px;
+        top: 3px;
+        cursor: pointer;
+        border: 1px solid $borderColor;
+    }
+
+}
+.popup{
+    &__title {
+        padding: 43px 72px 11px;
+        font-size: 32px;
+        @extend %quicksand-400;
+        border-bottom: 1px solid $borderColor;
+    }
+    &__btn-close {
+        top: 47px;
+        right: 20px;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__btn-close::before,
+    &__btn-close::after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: #000;
+        border-radius: 2px;
+        transition: background-color 0.3s ease;
+    }
+
+    &__btn-close::before {
+        transform: rotate(45deg);
+    }
+
+    &__btn-close::after {
+        transform: rotate(-45deg);
+    }
+
+    &__btn-close:hover::before,
+    &__btn-close:hover::after {
+        background-color: $accent;
+    }
+    &__btn {
+        width: 329px;
+        height: 55px;
+        color: #fff;
+        border: none;
+        background-color: $accent;
+        border-radius: 10px;
+        margin-bottom: 18px;
+    }
+    &__form{
+            width: 329px;
+            position: relative;
+    }
+    &__form::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 336px;
+        background-color: $borderColor;
+        top: -15px;
+        right: -44px;
+    }
+}

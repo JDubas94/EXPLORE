@@ -25,6 +25,7 @@
         background-color: transparent;
         border: 1px solid #F06F59;
         border-radius: 10px;
+        cursor: pointer;
     }
 }
 
@@ -694,6 +695,141 @@
 .slick-3-prev.active,
 .slick-3-next.active {
     background-color: $accent;
+}
+
+.login-popup {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 723px;
+
+    &__inner {
+        height: 493px;
+        background-color: #fff;
+        position: relative;
+    }
+
+
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        padding-block: 48px 17px;
+    }
+
+    &__input {
+        width: 329px;
+        padding-block: 16px;
+        padding-left: 20px;
+        border-radius: 10px;
+        border: 1px solid $borderColor;
+    }
+
+    &__input-email {
+        margin-bottom: 20px;
+    }
+
+    &__input-password {
+        margin-bottom: 15px;
+    }
+
+    &__item-info {
+        margin-bottom: 10px;
+    }
+
+    &__item-text {
+        margin-right: 15px;
+    }
+
+    &__item-link {
+        color: $accent;
+        text-decoration: underline;
+    }
+
+    &__subtitle {
+        margin-bottom: 44px;
+    }
+
+}
+
+.login-popup::backdrop {
+    background-color: rgb(0 0 0 /0.8);
+}
+
+.scroll-block {
+    overflow: hidden;
+}
+
+
+.registration-popup {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 723px;
+    background-color: #fff;
+
+    &__inner {
+        height: 746px;
+    }
+    &__title{
+        padding-top: 37px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        padding-block: 43px 57px;
+    }
+
+    &__item-form {
+        max-width: 329px;
+    }
+
+    &__input {
+        width: 329px;
+        padding-block: 18px;
+        padding-left: 20px;
+        border: 1px solid $borderColor;
+        border-radius: 10px;
+        margin-bottom: 17px;
+    }
+
+    &__input-password {
+        margin-bottom: 23px;
+    }
+
+    &__form-text {
+        font-size: 14px;
+    }
+    &__btn{
+        height: 54px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    &__text-box{
+        text-align: center;
+        font-size: 14px;
+    }
+    &__link{
+        color: $accent;
+        text-decoration: underline;
+    }
+    &__item-form::after{
+        height: 551px;
+    }
+    &__subtitle{
+        margin-bottom: 42px;
+    }
+    &__list-item{
+        width: 133px;
+    }
 }
 
 

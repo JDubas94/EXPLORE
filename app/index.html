@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="header">
+     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__top">
@@ -35,7 +35,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <button class="header__btn">Войти</button>
+                    <button class="header__btn open-modal">Войти</button>
                 </div>
                 <div class="header-content">
                     <div class="header-content__inner">
@@ -730,7 +730,7 @@
                                 <div class="star" data-rateyo-rating="4"></div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -801,8 +801,121 @@
                 </div>
             </div>
         </div>
-    </footer>
-
+    </footer> 
+    <dialog class="login-popup popup">
+        <div class="login-popup__inner">
+            <h3 class="popup__title">
+                Вход
+            </h3>
+            <div class="login-popup__items">
+                <div class="login-popup__item-form popup__form">
+                    <form class="login-popup__form" action="#">
+                        <input class="login-popup__input login-popup__input-email" type="email" placeholder="Email"
+                            required>
+                        <input class="login-popup__input login-popup__input-password" type="password"
+                            placeholder="Пароль" required>
+                        <label class="login-popup__label checkbox">
+                            <div class="checkbox__input-box">
+                                <input class="checkbox__input" type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </div>
+                            <span class="login-popup__form-text">Запомнить меня</span>
+                        </label>
+                        <button class="popup__btn">Войти</button>
+                    </form>
+                    <div class="login-popup__info">
+                        <div class="login-popup__item-info">
+                            <span class="login-popup__item-text">Нет учетной записи?</span>
+                            <a class="login-popup__item-link open-popup" href="#">Регистрация</a>
+                        </div>
+                        <div class="login-popup__item-info">
+                            <span class="login-popup__item-text">Забыли пароль?</span>
+                            <a class="login-popup__item-link" href="#">Восстановить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-popup__item-social popup-social">
+                    <p class="login-popup__subtitle">
+                        Или авторизуйтесь через:
+                    </p>
+                    <ul class="popup-social__list">
+                        <li class="popup-social__item">
+                            <a class="popup-social__link" href="#">
+                                <img class="popup-social__img" src="images/icon/apple.svg" alt="apple icon">
+                            </a>
+                        </li>
+                        <li class="popup-social__item">
+                            <a class="popup-social__link" href="#">
+                                <img class="popup-social__img" src="images/icon/facebook-icon.svg" alt="facebook icon">
+                            </a>
+                        </li>
+                        <li class="popup-social__item">
+                            <a class="popup-social__link" href="#">
+                                <img class="popup-social__img" src="images/icon/google.svg" alt="google icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="popup__btn-close close-modal"></button>
+        </div>
+    </dialog>
+    <dialog class="registration-popup popup">
+        <div class="registration-popup__inner">
+            <h3 class="registration-popup__title popup__title ">
+                Создать аккаунт
+            </h3>
+            <div class="registration-popup__items">
+                <div class="registration-popup__item-form popup__form">
+                    <form class="registration-popup__form" action="#">
+                        <input class="registration-popup__input" type="text" placeholder="Имя" required>
+                        <input class="registration-popup__input" type="text" placeholder="Фамилия" required>
+                        <input class="registration-popup__input" type="tel" placeholder="Номер телефона" required>
+                        <input class="registration-popup__input" type="email" placeholder="Email" required>
+                        <input class="registration-popup__input registration-popup__input-password" type="password"
+                            placeholder="Пароль" required>
+                        <label class="registration-popup__label checkbox">
+                            <div class="checkbox__input-box">
+                                <input class="checkbox__input" type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </div>
+                            <span class="registration-popup__form-text">
+                                Я согласен на сбор и обработку моих персональных данных
+                            </span>
+                        </label>
+                        <button class="popup__btn registration-popup__btn">Зарегистрироваться</button>
+                    </form>
+                    <div class="registration-popup__text-box">
+                        <p class="registration-popup__text">У вас есть аккаунт?</p>
+                        <a class="registration-popup__link" href="#">Войти</a>
+                    </div>
+                </div>
+                <div class="registration-popup__item popup-social">
+                    <p class="registration-popup__subtitle">
+                        Или авторизуйтесь через:
+                    </p>
+                    <ul class="popup-social__list">
+                        <li class="popup-social__item registration-popup__list-item">
+                            <a class="popup-social__link" href="#">
+                                <img class="popup-social__img" src="images/icon/apple.svg" alt="apple icon">
+                            </a>
+                        </li>
+                        <li class="popup-social__item registration-popup__list-item">
+                            <a class="popup-social__link" href="#">
+                                <img class="popup-social__img" src="images/icon/facebook-icon.svg" alt="facebook icon">
+                            </a>
+                        </li>
+                        <li class="popup-social__item registration-popup__list-item">
+                            <a class="popup-social__link" href="#">
+                                <img class="popup-social__img" src="images/icon/google.svg" alt="google icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="popup__btn-close close-popup"></button>
+        </div>
+    </dialog>
 
 
     <script src="js/main.min.js"></script>

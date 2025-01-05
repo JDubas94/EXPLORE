@@ -1,3 +1,65 @@
+const loginPopup = document.querySelector('.login-popup');
+const openModal = document.querySelector('.open-modal');
+const closeModal = document.querySelector('.close-modal');
+
+const registrationPopup = document.querySelector('.registration-popup');
+const openPopup = document.querySelector('.open-popup');
+const closePop = document.querySelector('.close-popup')
+
+openModal.addEventListener('click', openModalAndBlockScroll)
+closeModal.addEventListener('click', closeAllPopups)
+loginPopup.addEventListener('click', closeOnOverlayClick)
+loginPopup.addEventListener('cancel', returnScroll)
+document.addEventListener('keydown', closePopupsOnEscape);
+
+openPopup.addEventListener('click', openPopupAndBlockScroll)
+closePop.addEventListener('click', closeAllPopups)
+registrationPopup.addEventListener('click', closeOnOverlayClick)
+registrationPopup.addEventListener('cancel', returnScroll)
+
+function openModalAndBlockScroll(){
+  loginPopup.showModal()
+  document.body.classList.add('scroll-block')
+}
+function openPopupAndBlockScroll(){
+  registrationPopup.showModal()
+  document.body.classList.add('scroll-block')
+}
+
+function returnScroll(){
+  document.body.classList.remove('scroll-block')
+}
+
+function close(){
+  loginPopup.close()
+  returnScroll()
+}
+
+function closePopup(){
+  registrationPopup.close()
+  returnScroll()
+}
+function closeAllPopups() {
+  if (loginPopup.open) loginPopup.close(); 
+  if (registrationPopup.open) registrationPopup.close();
+  returnScroll();
+}
+
+function closeOnOverlayClick({ currentTarget, target }) {
+  if (target === currentTarget) {
+    closeAllPopups(); 
+  }
+}
+function closePopupsOnEscape(event) {
+  if (event.key === 'Escape') {
+    closeAllPopups();
+  }
+}
+
+
+
+
+
 $(function () {
   $('.reviews-slider__slider').slick({
     slidesToShow: 3,
@@ -78,6 +140,7 @@ $(function () {
 
 
 });
+
 
 
 
