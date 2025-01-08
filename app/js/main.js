@@ -17,37 +17,37 @@ closePop.addEventListener('click', closeAllPopups)
 registrationPopup.addEventListener('click', closeOnOverlayClick)
 registrationPopup.addEventListener('cancel', returnScroll)
 
-function openModalAndBlockScroll(){
+function openModalAndBlockScroll() {
   loginPopup.showModal()
   document.body.classList.add('scroll-block')
 }
-function openPopupAndBlockScroll(){
+function openPopupAndBlockScroll() {
   registrationPopup.showModal()
   document.body.classList.add('scroll-block')
 }
 
-function returnScroll(){
+function returnScroll() {
   document.body.classList.remove('scroll-block')
 }
 
-function close(){
+function close() {
   loginPopup.close()
   returnScroll()
 }
 
-function closePopup(){
+function closePopup() {
   registrationPopup.close()
   returnScroll()
 }
 function closeAllPopups() {
-  if (loginPopup.open) loginPopup.close(); 
+  if (loginPopup.open) loginPopup.close();
   if (registrationPopup.open) registrationPopup.close();
   returnScroll();
 }
 
 function closeOnOverlayClick({ currentTarget, target }) {
   if (target === currentTarget) {
-    closeAllPopups(); 
+    closeAllPopups();
   }
 }
 function closePopupsOnEscape(event) {
@@ -58,9 +58,14 @@ function closePopupsOnEscape(event) {
 
 
 
-
-
 $(function () {
+  
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active')
+    $('.menu__btn').toggleClass('menu__btn--open')
+  });
+
+
   $('.reviews-slider__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 3,
