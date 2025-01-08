@@ -172,17 +172,21 @@
 }
 
 .footer {
-    padding: 73px 0 65px;
+    padding: 73px 15px 65px;
 
     &__inner {
         display: flex;
         justify-content: space-between;
+        gap: 20px;
     }
 
     &__logo-link {
         margin-bottom: 10px;
         width: 123px;
         height: 120px;
+    }
+    &__logo-text{
+        text-align: center;
     }
 
     &__title {

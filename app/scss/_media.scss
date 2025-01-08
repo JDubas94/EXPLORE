@@ -293,6 +293,19 @@
             margin-bottom: 20px;
         }
     }
+    .footer{
+        padding: 30px 15px;
+        &__inner{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        &__title{
+            text-align: center;
+            font-size: 18px;
+        }
+    }
 }
 
 @media (max-width: 670px) {
