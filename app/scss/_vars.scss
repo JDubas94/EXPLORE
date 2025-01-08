@@ -1,0 +1,19 @@
+$accent: #F06F59;
+$foncolor: #F5F5F5;
+$slickArrow: #D9D9D9;
+$borderColor: #A9A9A9;
+
+
+%quicksand-400 {
+    font-family: 'Quicksand-Regular', sans-serif;
+    font-weight: 400;
+}
+%quicksand-700 {
+    font-family: 'Quicksand-Bold', sans-serif;
+    font-weight: 700;
+}
+%title{
+    font-size: 48px;
+    @extend %quicksand-700;
+    text-align: center;
+}

@@ -9,8 +9,920 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__top">
+                    <a href="#" class="logo">
+                        <img class="logo__img" src="images/logo.png" alt="logo images">
+                    </a>
+                    <nav class="header__menu menu">
+                        <button class="menu__btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#">Почему мы?</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#">Путевки</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#">Галерея</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#">Гиды</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#">Отзывы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__btn open-modal">Войти</button>
+                </div>
+            </div>
+            <div class="header-content">
+                <div class="container">
+                    <div class="header-content__inner">
+                        <h1 class="header-content__title">
+                            Пришло время новых приключений
+                        </h1>
+                        <p class="header-content__text">
+                            Чтобы получить максимальную отдачу от вашего приключения, вам нужно поехать туда, куда вам
+                            нравится
+                        </p>
+                        <a class="header-content__link">
+                            Выбрать тур
+                        </a>
+                    </div>
+                    <div class="header-content__search">
+                        <form class="header-content__form" action="#">
+                            <div class="header-content__form-search">
+                                <label class="header-content__label">
+                                    Локация
+                                </label>
+                                <input class="header-content__input-search" type="search"
+                                    placeholder="Куда хотите отправится?">
+                            </div>
+                            <div class="header-content__form-data">
+                                <label class="header-content__label">
+                                    Выберите дату
+                                </label>
+                                <input class="header-content__input-data" type="text" placeholder="13 Августа 2023"
+                                    onfocus="(this.type='date')" onblur="(this.type='text')">
+                            </div>
+                            <button class="header-content__btn-search"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="about-us">
+            <div class="container">
+                <div class="about-us__wrapper">
+                    <h3 class="about-us__title">
+                        Почему мы?
+                    </h3>
+                    <p class="about-us__text-top">
+                        Наша поддержка и помощь сделают ваше путешествие незабываемым
+                    </p>
+                    <div class="about-us__items">
+                        <div class="about-us__item about-us__item--partners">
+                            <h5 class="about-us__subtitle">
+                                Проверенные и надежные
+                            </h5>
+                            <p class="about-us__text">
+                                Во всем мире нам доверяют 20 миллионов таких же<br> путешественников, как и вы.
+                            </p>
+                        </div>
+                        <div class="about-us__item about-us__item--support">
+                            <h5 class="about-us__subtitle">
+                                Надежная поддержка
+                            </h5>
+                            <p class="about-us__text">
+                                Мы здесь для вас. Обращайтесь к нам в любое время по телефону, электронной почте или в
+                                чате.
+                            </p>
+                        </div>
+                        <div class="about-us__item about-us__item--travel">
+                            <h5 class="about-us__subtitle">
+                                Партнер по путешествиям
+                            </h5>
+                            <p class="about-us__text">
+                                Ваш поиск заканчивается здесь. С нами ваша поездка будет точно в безопасности.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="vouchers-slider">
+            <div class="container">
+                <div class="vouchers-slider__inner">
+                    <h3 class="vouchers-slider__title">
+                        Туристические пакеты Explore
+                    </h3>
+                    <p class="vouchers-slider__text">
+                        Получите полный пакет услуг, включающий все ваши потребности в поездках
+                    </p>
+                    <div class="vouchers-slider__items">
+                        <div class="vouchers-slider__item">
+                            <div class="vouchers-slider__img-box">
+                                <span class="vouchers-slider__item-price">
+                                    25 000 UAH
+                                </span>
+                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-1.jpg"
+                                    alt="slider images">
+                                <span class="vouchers-slider__item-day">
+                                    2х дневный тур
+                                </span>
+                            </div>
+                            <h5 class="vouchers-slider__subtitle">
+                                Гора Пилатус
+                            </h5>
+                            <div class="vouchers-slider__item-location">
+                                <p class="vouchers-slider__item-country">
+                                    Швейцария
+                                </p>
+                                <div class="rating" data-rating="4.9">
+                                    <div class="star"></div>
+                                    <span class="rating__value"></span>
+                                </div>
+                            </div>
+                            <button class="vouchers-slider__item-btn">
+                                Забронировать
+                            </button>
+                        </div>
+                        <div class="vouchers-slider__item">
+                            <div class="vouchers-slider__img-box">
+                                <span class="vouchers-slider__item-price">
+                                    37 000 UAH
+                                </span>
+                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-2.jpg"
+                                    alt="slider images">
+                                <span class="vouchers-slider__item-day">
+                                    3х дневный тур
+                                </span>
+                            </div>
+                            <h5 class="vouchers-slider__subtitle">
+                                Остров блууотерс
+                            </h5>
+                            <div class="vouchers-slider__item-location">
+                                <p class="vouchers-slider__item-country">
+                                    Дубай
+                                </p>
+                                <div class="rating" data-rating="4.8">
+                                    <div class="star"></div>
+                                    <span class="rating__value"></span>
+                                </div>
+                            </div>
+                            <button class="vouchers-slider__item-btn">
+                                Забронировать
+                            </button>
+                        </div>
+                        <div class="vouchers-slider__item">
+                            <div class="vouchers-slider__img-box">
+                                <span class="vouchers-slider__item-price">
+                                    55 000 UAH
+                                </span>
+                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-3.jpg"
+                                    alt="slider images">
+                                <span class="vouchers-slider__item-day">
+                                    4х дневный тур
+                                </span>
+                            </div>
+                            <h5 class="vouchers-slider__subtitle">
+                                Деревня Санта-Клауса
+                            </h5>
+                            <div class="vouchers-slider__item-location">
+                                <p class="vouchers-slider__item-country">
+                                    Финляндия
+                                </p>
+                                <div class="rating" data-rating="5.0">
+                                    <div class="star"></div>
+                                    <span class="rating__value"></span>
+                                </div>
+                            </div>
+                            <button class="vouchers-slider__item-btn">
+                                Забронировать
+                            </button>
+                        </div>
+                        <div class="vouchers-slider__item">
+                            <div class="vouchers-slider__img-box">
+                                <span class="vouchers-slider__item-price">
+                                    33 000 UAH
+                                </span>
+                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-4.jpg"
+                                    alt="slider images">
+                                <span class="vouchers-slider__item-day">
+                                    3х дневный тур
+                                </span>
+                            </div>
+                            <h5 class="vouchers-slider__subtitle">
+                                Деревня Санта-Клауса
+                            </h5>
+                            <div class="vouchers-slider__item-location">
+                                <p class="vouchers-slider__item-country">
+                                    Финляндия
+                                </p>
+                                <div class="rating" data-rating="5.0">
+                                    <div class="star"></div>
+                                    <span class="rating__value"></span>
+                                </div>
+                            </div>
+                            <button class="vouchers-slider__item-btn">
+                                Забронировать
+                            </button>
+                        </div>
+                        <div class="vouchers-slider__item">
+                            <div class="vouchers-slider__img-box">
+                                <span class="vouchers-slider__item-price">
+                                    33 000 UAH
+                                </span>
+                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-5.jpg"
+                                    alt="slider images">
+                                <span class="vouchers-slider__item-day">
+                                    4х дневный тур
+                                </span>
+                            </div>
+                            <h5 class="vouchers-slider__subtitle">
+                                Древние храмы
+                            </h5>
+                            <div class="vouchers-slider__item-location">
+                                <p class="vouchers-slider__item-country">
+                                    Италия
+                                <div class="rating" data-rating="4.9">
+                                    <div class="star"></div>
+                                    <span class="rating__value"></span>
+                                </div>
+                            </div>
+                            <button class="vouchers-slider__item-btn">
+                                Забронировать
+                            </button>
+                        </div>
+                        <div class="vouchers-slider__item">
+                            <div class="vouchers-slider__img-box">
+                                <span class="vouchers-slider__item-price">
+                                    25 000 UAH
+                                </span>
+                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-1.jpg"
+                                    alt="slider images">
+                                <span class="vouchers-slider__item-day">
+                                    2х дневный тур
+                                </span>
+                            </div>
+                            <h5 class="vouchers-slider__subtitle">
+                                Гора Пилатус
+                            </h5>
+                            <div class="vouchers-slider__item-location">
+                                <p class="vouchers-slider__item-country">
+                                    Швейцария
+                                </p>
+                                <div class="rating" data-rating="4.9">
+                                    <div class="star"></div>
+                                    <span class="rating__value"></span>
+                                </div>
+                            </div>
+                            <button class="vouchers-slider__item-btn">
+                                Забронировать
+                            </button>
+                        </div>
+                        <div class="vouchers-slider__item">
+                            <div class="vouchers-slider__img-box">
+                                <span class="vouchers-slider__item-price">
+                                    37 000 UAH
+                                </span>
+                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-2.jpg"
+                                    alt="slider images">
+                                <span class="vouchers-slider__item-day">
+                                    3х дневный тур
+                                </span>
+                            </div>
+                            <h5 class="vouchers-slider__subtitle">
+                                Остров блууотерс
+                            </h5>
+                            <div class="vouchers-slider__item-location">
+                                <p class="vouchers-slider__item-country">
+                                    Дубай
+                                </p>
+                                <div class="rating" data-rating="4.8">
+                                    <div class="star"></div>
+                                    <span class="rating__value"></span>
+                                </div>
+                            </div>
+                            <button class="vouchers-slider__item-btn">
+                                Забронировать
+                            </button>
+                        </div>
+                        <div class="vouchers-slider__item">
+                            <div class="vouchers-slider__img-box">
+                                <span class="vouchers-slider__item-price">
+                                    55 000 UAH
+                                </span>
+                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-3.jpg"
+                                    alt="slider images">
+                                <span class="vouchers-slider__item-day">
+                                    4х дневный тур
+                                </span>
+                            </div>
+                            <h5 class="vouchers-slider__subtitle">
+                                Деревня Санта-Клауса
+                            </h5>
+                            <div class="vouchers-slider__item-location">
+                                <p class="vouchers-slider__item-country">
+                                    Финляндия
+                                </p>
+                                <div class="rating" data-rating="5.0">
+                                    <div class="star"></div>
+                                    <span class="rating__value"></span>
+                                </div>
+                            </div>
+                            <button class="vouchers-slider__item-btn">
+                                Забронировать
+                            </button>
+                        </div>
+                        <div class="vouchers-slider__item">
+                            <div class="vouchers-slider__img-box">
+                                <span class="vouchers-slider__item-price">
+                                    33 000 UAH
+                                </span>
+                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-4.jpg"
+                                    alt="slider images">
+                                <span class="vouchers-slider__item-day">
+                                    3х дневный тур
+                                </span>
+                            </div>
+                            <h5 class="vouchers-slider__subtitle">
+                                Деревня Санта-Клауса
+                            </h5>
+                            <div class="vouchers-slider__item-location">
+                                <p class="vouchers-slider__item-country">
+                                    Финляндия
+                                </p>
+                                <div class="rating" data-rating="5.0">
+                                    <div class="star"></div>
+                                    <span class="rating__value"></span>
+                                </div>
+                            </div>
+                            <button class="vouchers-slider__item-btn">
+                                Забронировать
+                            </button>
+                        </div>
+                        <div class="vouchers-slider__item">
+                            <div class="vouchers-slider__img-box">
+                                <span class="vouchers-slider__item-price">
+                                    33 000 UAH
+                                </span>
+                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-5.jpg"
+                                    alt="slider images">
+                                <span class="vouchers-slider__item-day">
+                                    4х дневный тур
+                                </span>
+                            </div>
+                            <h5 class="vouchers-slider__subtitle">
+                                Древние храмы
+                            </h5>
+                            <div class="vouchers-slider__item-location">
+                                <p class="vouchers-slider__item-country">
+                                    Италия
+                                <div class="rating" data-rating="4.9">
+                                    <div class="star"></div>
+                                    <span class="rating__value"></span>
+                                </div>
+                            </div>
+                            <button class="vouchers-slider__item-btn">
+                                Забронировать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-slider">
+            <div class="container">
+                <div class="gallery-slider__inner">
+                    <h3 class="gallery-slider__title">
+                        Фотогалерея
+                    </h3>
+                    <p class="gallery-slider__text">
+                        Давайте отправимся в путешествие, что бы избавиться от скуки и сделать ваш день более ярким
+                    </p>
+                    <div class="gallery-slider__wrapper">
+                        <div class="gallery-slider__slide gallery-slider__slide-1">
+                            <img class="gallery-slider__slide-img item1" src="images/gallery-slider/1.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item2" src="images/gallery-slider/2.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item3" src="images/gallery-slider/3.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item4" src="images/gallery-slider/4.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item5" src="images/gallery-slider/5.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item6" src="images/gallery-slider/6.png"
+                                alt="gallery images">
+                        </div>
+                        <div class="gallery-slider__slide gallery-slider__slide-2">
+                            <img class="gallery-slider__slide-img item7" src="images/gallery-slider/7.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item8" src="images/gallery-slider/8.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item9" src="images/gallery-slider/9.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item10" src="images/gallery-slider/10.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item11" src="images/gallery-slider/11.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item12" src="images/gallery-slider/12.png"
+                                alt="gallery images">
+                        </div>
+                        <div class="gallery-slider__slide gallery-slider__slide-3">
+                            <img class="gallery-slider__slide-img item13" src="images/gallery-slider/13.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item14" src="images/gallery-slider/14.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item15" src="images/gallery-slider/15.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item16" src="images/gallery-slider/16.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item17" src="images/gallery-slider/17.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item18" src="images/gallery-slider/18.png"
+                                alt="gallery images">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="guides">
+            <div class="container">
+                <div class="guides__inner">
+                    <h3 class="guides__title">
+                        Наши профессиональные гиды
+                    </h3>
+                    <div class="guides__items">
+                        <div class="guides__item">
+                            <div class="guides__img-box" style="background-image: url(images/guides/1.png);">
+                                <div class="guides__box-price">
+                                    <span class="guides__item-price">3100</span>
+                                    <span class="guides__item-currency">UAH</span>
+                                </div>
+                            </div>
+                            <div class="guides__rating-box">
+                                <p class="guides__item-name">Альберт Николаевич </p>
+                                <div class="rating" data-rating="4.9">
+                                    <div class="star"></div>
+                                    <span class="rating__value"></span>
+                                </div>
+                            </div>
+                            <p class="guides__item-language">Языки: Украинский</p>
+                        </div>
+                        <div class="guides__item">
+                            <div class="guides__img-box" style="background-image: url(images/guides/2.png);">
+                                <div class="guides__box-price">
+                                    <span class="guides__item-price">3700</span>
+                                    <span class="guides__item-currency">UAH</span>
+                                </div>
+                            </div>
+                            <div class="guides__rating-box">
+                                <p class="guides__item-name">Александр Смирнов</p>
+                                <div class="rating" data-rating="5.0">
+                                    <div class="star"></div>
+                                    <span class="rating__value"></span>
+                                </div>
+                            </div>
+                            <p class="guides__item-language">Языки: Украинский, Английский</p>
+                        </div>
+                        <div class="guides__item">
+                            <div class="guides__img-box" style="background-image: url(images/guides/3.png);">
+                                <div class="guides__box-price">
+                                    <span class="guides__item-price">3800</span>
+                                    <span class="guides__item-currency">UAH</span>
+                                </div>
+                            </div>
+                            <div class="guides__rating-box">
+                                <p class="guides__item-name">Владислав Попов</p>
+                                <div class="rating" data-rating="5.0">
+                                    <div class="star"></div>
+                                    <span class="rating__value"></span>
+                                </div>
+                            </div>
+                            <p class="guides__item-language">Языки: Украинский, Английский</p>
+                        </div>
+                        <div class="guides__item">
+                            <div class="guides__img-box" style="background-image: url(images/guides/4.png);">
+                                <div class="guides__box-price">
+                                    <span class="guides__item-price">5900</span>
+                                    <span class="guides__item-currency">UAH</span>
+                                </div>
+                            </div>
+                            <div class="guides__rating-box">
+                                <p class="guides__item-name">Анатолий Кузнецов</p>
+                                <div class="rating" data-rating="4.9">
+                                    <div class="star"></div>
+                                    <span class="rating__value"></span>
+                                </div>
+                            </div>
+                            <p class="guides__item-language">Языки: Украинский, Английский,
+                                Немецкий, Португальский, Испанский</p>
+                        </div>
+                    </div>
+                    <div class="guides__item-link">
+                        <a class="guides__link" href="#">Показать всех</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews-slider">
+            <div class="container">
+                <div class="reviews-slider__inner">
+                    <h3 class="reviews-slider__title">
+                        Отзывы клиентов о нашем сервисе
+                    </h3>
+                    <div class="reviews-slider__slider">
+                        <div class="reviews-slider__item">
+                            <h5 class="reviews-slider__subtitle">
+                                Гора Пилатус
+                            </h5>
+                            <p class="reviews-slider__text">
+                                В целом, конечно, укрепление и развитие внутренней структуры требует анализа
+                                инновационных методов управления процессами.
+                            </p>
+                            <div class="reviews-slider__rating-box">
+                                <div class="reviews-slider__item-name">
+                                    <img class="reviews-slider__item-img" src="images/reviews/1.jpg" alt="">
+                                    Роман Букин
+                                </div>
+                                <div class="star" data-rateyo-rating="5"></div>
+                            </div>
+                        </div>
+                        <div class="reviews-slider__item">
+                            <h5 class="reviews-slider__subtitle">
+                                Воздушные шары
+                            </h5>
+                            <p class="reviews-slider__text">
+                                Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                позволяет выполнить важные задания по разработке благоприятных перспектив.
+                            </p>
+                            <div class="reviews-slider__rating-box">
+                                <div class="reviews-slider__item-name">
+                                    <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="">
+                                    Светлана Букина
+                                </div>
+                                <div class="star" data-rateyo-rating="4"></div>
+                            </div>
+                        </div>
+                        <div class="reviews-slider__item">
+                            <h5 class="reviews-slider__subtitle">
+                                Древние храмы
+                            </h5>
+                            <p class="reviews-slider__text">
+                                Как принято считать, акционеры крупнейших компаний могут быть в равной степени
+                                предоставлены сами себе.
+                            </p>
+                            <div class="reviews-slider__rating-box">
+                                <div class="reviews-slider__item-name">
+                                    <img class="reviews-slider__item-img" src="images/reviews/3.jpg" alt="">
+                                    Геннадий Букин
+                                </div>
+                                <div class="star" data-rateyo-rating="5"></div>
+                            </div>
+                        </div>
+
+                        <div class="reviews-slider__item">
+                            <h5 class="reviews-slider__subtitle">
+                                Воздушные шары
+                            </h5>
+                            <p class="reviews-slider__text">
+                                Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                позволяет выполнить важные задания по разработке благоприятных перспектив.
+                            </p>
+                            <div class="reviews-slider__rating-box">
+                                <div class="reviews-slider__item-name">
+                                    <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="">
+                                    Светлана Букина
+                                </div>
+                                <div class="star" data-rateyo-rating="4"></div>
+                            </div>
+                        </div>
+                        <div class="reviews-slider__item">
+                            <h5 class="reviews-slider__subtitle">
+                                Воздушные шары
+                            </h5>
+                            <p class="reviews-slider__text">
+                                Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                позволяет выполнить важные задания по разработке благоприятных перспектив.
+                            </p>
+                            <div class="reviews-slider__rating-box">
+                                <div class="reviews-slider__item-name">
+                                    <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="">
+                                    Светлана Букина
+                                </div>
+                                <div class="star" data-rateyo-rating="4"></div>
+                            </div>
+                        </div>
+                        <div class="reviews-slider__item">
+                            <h5 class="reviews-slider__subtitle">
+                                Воздушные шары
+                            </h5>
+                            <p class="reviews-slider__text">
+                                Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                позволяет выполнить важные задания по разработке благоприятных перспектив.
+                            </p>
+                            <div class="reviews-slider__rating-box">
+                                <div class="reviews-slider__item-name">
+                                    <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="">
+                                    Светлана Букина
+                                </div>
+                                <div class="star" data-rateyo-rating="4"></div>
+                            </div>
+                        </div>
+                        <div class="reviews-slider__item">
+                            <h5 class="reviews-slider__subtitle">
+                                Воздушные шары
+                            </h5>
+                            <p class="reviews-slider__text">
+                                Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                позволяет выполнить важные задания по разработке благоприятных перспектив.
+                            </p>
+                            <div class="reviews-slider__rating-box">
+                                <div class="reviews-slider__item-name">
+                                    <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="">
+                                    Светлана Букина
+                                </div>
+                                <div class="star" data-rateyo-rating="4"></div>
+                            </div>
+                        </div>
+                        <div class="reviews-slider__item">
+                            <h5 class="reviews-slider__subtitle">
+                                Воздушные шары
+                            </h5>
+                            <p class="reviews-slider__text">
+                                Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                позволяет выполнить важные задания по разработке благоприятных перспектив.
+                            </p>
+                            <div class="reviews-slider__rating-box">
+                                <div class="reviews-slider__item-name">
+                                    <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="">
+                                    Светлана Букина
+                                </div>
+                                <div class="star" data-rateyo-rating="4"></div>
+                            </div>
+                        </div>
+                        <div class="reviews-slider__item">
+                            <h5 class="reviews-slider__subtitle">
+                                Воздушные шары
+                            </h5>
+                            <p class="reviews-slider__text">
+                                Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                позволяет выполнить важные задания по разработке благоприятных перспектив.
+                            </p>
+                            <div class="reviews-slider__rating-box">
+                                <div class="reviews-slider__item-name">
+                                    <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="">
+                                    Светлана Букина
+                                </div>
+                                <div class="star" data-rateyo-rating="4"></div>
+                            </div>
+                        </div>
+                        <div class="reviews-slider__item">
+                            <h5 class="reviews-slider__subtitle">
+                                Воздушные шары
+                            </h5>
+                            <p class="reviews-slider__text">
+                                Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                позволяет выполнить важные задания по разработке благоприятных перспектив.
+                            </p>
+                            <div class="reviews-slider__rating-box">
+                                <div class="reviews-slider__item-name">
+                                    <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="">
+                                    Светлана Букина
+                                </div>
+                                <div class="star" data-rateyo-rating="4"></div>
+                            </div>
+                        </div>
+                        <div class="reviews-slider__item">
+                            <h5 class="reviews-slider__subtitle">
+                                Воздушные шары
+                            </h5>
+                            <p class="reviews-slider__text">
+                                Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                позволяет выполнить важные задания по разработке благоприятных перспектив.
+                            </p>
+                            <div class="reviews-slider__rating-box">
+                                <div class="reviews-slider__item-name">
+                                    <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="">
+                                    Светлана Букина
+                                </div>
+                                <div class="star" data-rateyo-rating="4"></div>
+                            </div>
+                        </div>
+                        <div class="reviews-slider__item">
+                            <h5 class="reviews-slider__subtitle">
+                                Воздушные шары
+                            </h5>
+                            <p class="reviews-slider__text">
+                                Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                позволяет выполнить важные задания по разработке благоприятных перспектив.
+                            </p>
+                            <div class="reviews-slider__rating-box">
+                                <div class="reviews-slider__item-name">
+                                    <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="">
+                                    Светлана Букина
+                                </div>
+                                <div class="star" data-rateyo-rating="4"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a href="#" class="logo footer__logo-link">
+                        <img class="logo__img" src="images/logo.png" alt="logo images">
+                    </a>
+                    <p class="footer__logo-text">
+                        @ 2023 - EXPLORE
+                    </p>
+                </div>
+                <div class="footer__contacts">
+                    <h5 class="footer__title">
+                        Контакты:
+                    </h5>
+                    <ul class="footer__contacts-list">
+                        <li class="footer__list-item">
+                            Адрес: Академика Ефремова 8
+                        </li>
+                        <li class="footer__list-item">
+                            Номер:
+                            <a class="footer__item-link" href="tel:+380663661216">
+                                +380(66) 366-12-16
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            Email:
+                            <a class="footer__item-link" href="mailto:Exploretravel@gmail.com">
+                                Exploretravel@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h3 class="footer__title footer__title-social">
+                        Подписывайтесь на нас
+                    </h3>
+                    <ul class="footer__list-social">
+                        <li class="footer__item-social">
+                            <a class="footer__item-link" href="#">
+                                <img class="footer__item-img" src="images/icon/fecebook.svg" alt="social icon">
+                            </a>
+                        </li>
+                        <li class="footer__item-social">
+                            <a class="footer__item-link" href="#">
+                                <img class="footer__item-img" src="images/icon/youtube.svg" alt="social icon">
+                            </a>
+                        </li>
+                        <li class="footer__item-social">
+                            <a class="footer__item-link" href="#">
+                                <img class="footer__item-img" src="images/icon/telegram.svg" alt="social icon">
+                            </a>
+                        </li>
+                        <li class="footer__item-social">
+                            <a class="footer__item-link" href="#">
+                                <img class="footer__item-img" src="images/icon/instagram.svg" alt="social icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <dialog class="login-popup popup">
+        <div class="login-popup__inner">
+            <h3 class="popup__title">
+                Вход
+            </h3>
+            <div class="login-popup__items">
+                <div class="login-popup__item-form popup__form">
+                    <form class="login-popup__form" action="#">
+                        <input class="login-popup__input login-popup__input-email" type="email" placeholder="Email"
+                            required>
+                        <input class="login-popup__input login-popup__input-password" type="password"
+                            placeholder="Пароль" required>
+                        <label class="login-popup__label checkbox">
+                            <div class="checkbox__input-box">
+                                <input class="checkbox__input" type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </div>
+                            <span class="login-popup__form-text">Запомнить меня</span>
+                        </label>
+                        <button class="popup__btn">Войти</button>
+                    </form>
+                    <div class="login-popup__info">
+                        <div class="login-popup__item-info">
+                            <span class="login-popup__item-text">Нет учетной записи?</span>
+                            <a class="login-popup__item-link open-popup" href="#">Регистрация</a>
+                        </div>
+                        <div class="login-popup__item-info">
+                            <span class="login-popup__item-text">Забыли пароль?</span>
+                            <a class="login-popup__item-link" href="#">Восстановить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-popup__item-social popup-social">
+                    <p class="login-popup__subtitle">
+                        Или авторизуйтесь через:
+                    </p>
+                    <ul class="popup-social__list">
+                        <li class="popup-social__item">
+                            <a class="popup-social__link" href="#">
+                                <img class="popup-social__img" src="images/icon/apple.svg" alt="apple icon">
+                            </a>
+                        </li>
+                        <li class="popup-social__item">
+                            <a class="popup-social__link" href="#">
+                                <img class="popup-social__img" src="images/icon/facebook-icon.svg" alt="facebook icon">
+                            </a>
+                        </li>
+                        <li class="popup-social__item">
+                            <a class="popup-social__link" href="#">
+                                <img class="popup-social__img" src="images/icon/google.svg" alt="google icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="popup__btn-close close-modal"></button>
+        </div>
+    </dialog>
+    <dialog class="registration-popup popup">
+        <div class="registration-popup__inner">
+            <h3 class="registration-popup__title popup__title ">
+                Создать аккаунт
+            </h3>
+            <div class="registration-popup__items">
+                <div class="registration-popup__item-form popup__form">
+                    <form class="registration-popup__form" action="#">
+                        <input class="registration-popup__input" type="text" placeholder="Имя" required>
+                        <input class="registration-popup__input" type="text" placeholder="Фамилия" required>
+                        <input class="registration-popup__input" type="tel" placeholder="Номер телефона" required>
+                        <input class="registration-popup__input" type="email" placeholder="Email" required>
+                        <input class="registration-popup__input registration-popup__input-password" type="password"
+                            placeholder="Пароль" required>
+                        <label class="registration-popup__label checkbox">
+                            <div class="checkbox__input-box">
+                                <input class="checkbox__input" type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </div>
+                            <span class="registration-popup__form-text">
+                                Я согласен на сбор и обработку моих персональных данных
+                            </span>
+                        </label>
+                        <button class="popup__btn registration-popup__btn">Зарегистрироваться</button>
+                    </form>
+                    <div class="registration-popup__text-box">
+                        <p class="registration-popup__text">У вас есть аккаунт?</p>
+                        <a class="registration-popup__link" href="#">Войти</a>
+                    </div>
+                </div>
+                <div class="registration-popup__item popup-social">
+                    <p class="registration-popup__subtitle">
+                        Или авторизуйтесь через:
+                    </p>
+                    <ul class="popup-social__list">
+                        <li class="popup-social__item registration-popup__list-item">
+                            <a class="popup-social__link" href="#">
+                                <img class="popup-social__img" src="images/icon/apple.svg" alt="apple icon">
+                            </a>
+                        </li>
+                        <li class="popup-social__item registration-popup__list-item">
+                            <a class="popup-social__link" href="#">
+                                <img class="popup-social__img" src="images/icon/facebook-icon.svg" alt="facebook icon">
+                            </a>
+                        </li>
+                        <li class="popup-social__item registration-popup__list-item">
+                            <a class="popup-social__link" href="#">
+                                <img class="popup-social__img" src="images/icon/google.svg" alt="google icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="popup__btn-close close-popup"></button>
+        </div>
+    </dialog> -->
 
 
     <script src="js/main.min.js"></script>

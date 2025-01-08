@@ -8,6 +8,7 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 
 
+
 function browsersync() {
     browserSync.init({
         server: {
@@ -49,6 +50,8 @@ function images() {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/rateyo/src/jquery.rateyo.js',
+        'node_modules/slick-carousel/slick/slick.js',
         'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))
@@ -83,6 +86,6 @@ exports.browsersync = browsersync;
 exports.images = images;
 exports.cleanDist = cleanDist;
 exports.watching = watching;
-exports.build = series(cleanDist, images, build);
 
+exports.build = series(cleanDist, images, build);
 exports.default = parallel(styles, scripts, browsersync, watching);
