@@ -1,3 +1,13 @@
+@media (max-width: 1350px){
+    .vouchers-slider{
+        &__items{
+            width: 100%;
+            padding-left: 55px;
+        }
+    }
+}
+
+
 @media (max-width: 1200px) {
     .header {
 
@@ -5,7 +15,14 @@
             margin-left: 50px;
         }
     }
+    .vouchers-slider{
+        &__img-box{
+            width: 270px;
+        }
+    }
+    
 }
+
 
 @media (max-width: 1100px) {
     .about-us {
@@ -18,6 +35,12 @@
             width: 100%;
             height: 330px;
         }
+    }
+    .slick-1-prev{
+        left: 45%;
+    }
+    .slick-1-next{
+        left: 55%;
     }
 }
 
@@ -42,6 +65,17 @@
             max-width: 576px;
         }
     }
+}
+@media (max-width: 950px){
+    .vouchers-slider{
+        &__title{
+            font-size: 42px;
+        }
+        &__item-img{
+            width: 220px;
+        }
+    }
+
 }
 
 @media (max-width: 870px) {
@@ -234,6 +268,19 @@
     }
 
 }
+@media (max-width: 778px){
+    .vouchers-slider{
+        &__title{
+            font-size: 34px;
+        }
+        &__text{
+            font-size: 16px;
+        }
+        &__item-img{
+            width: 100%;
+        }
+    }
+}
 
 @media (max-width: 700px) {
     .login-popup {
@@ -356,6 +403,38 @@
             max-width: 100%;
         }
     }
+    .vouchers-slider{
+        &__item-img{
+            width: 83%;
+        }
+    }
+}
+
+@media (max-width: 550px){
+    .vouchers-slider{
+        &__inner{
+            padding-inline: 15px;
+        }
+        &__title {
+            font-size: 28px;
+        }
+        &__text{
+            font-size: 14px;
+        }
+        &__items{
+            padding-left: 0;
+        }
+        &__item-img{
+            width: 100%;
+        }
+    }
+    .slick-1-prev {
+        left: 42%;
+    }
+    .slick-slide{
+        display: flex !important;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 470px) {
@@ -406,7 +485,12 @@
         }
     }
 
-
+    .slick-1-prev {
+        left: 38%;
+    }
+    .slick-1-next{
+        left: 59%;
+    }
 }
 
 @media (max-width: 420px) {
@@ -454,4 +538,15 @@
              height: 60px;
          }
      }
+}
+@media (max-width: 340px){
+    .vouchers-slider{
+        &__items {
+            padding-bottom: 90px;
+        }
+
+        &__item{
+            margin-right: 0;
+        }
+    }
 }

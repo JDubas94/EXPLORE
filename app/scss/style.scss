@@ -333,7 +333,7 @@
         position: absolute;
         color: #FFFFFF;
         bottom: 20px;
-        right: 20px;
+        right: 80px;
     }
 
     &__subtitle {
@@ -396,11 +396,13 @@
     border: none;
     bottom: 0;
     left: 55%;
+    transform: translateX(-55%);
     cursor: pointer;
 }
 
 .slick-1-prev {
     left: 50%;
+    transform: translateX(-50%);
 }
 
 .slick-disabled {
