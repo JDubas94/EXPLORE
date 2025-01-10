@@ -4,21 +4,32 @@
 @import 'global';
 @import 'libs';
 
-.header {
+
+
+
+.header{
     background-image: url('../images/fon-header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
 
-    &__top {
+    
+.header-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #AFC9D6;
+    &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
         margin-left: 47px;
         padding-top: 50px;
     }
-
+    
     &__btn {
         width: 200px;
         height: 58px;
@@ -30,6 +41,7 @@
 }
 
 .header-content {
+    margin-top: 113px;
     padding: 113px 0 177px;
 
     &__inner {
@@ -163,12 +175,19 @@
     }
 
     &__item-link {
+        padding: 0 9px 9px;
+        transition: all .0.5s;
         color: #000000;
+    }
+
+    &__item-link:hover{
+        border-bottom: 1px solid $accent;
     }
 
     &__btn {
         display: none;
     }
+
 }
 
 .footer {
@@ -559,7 +578,7 @@
     bottom: -100px;
     left: 45%;
     cursor: pointer;
-    z-index: 999;
+    z-index: 10;
 }
 
 .slick-2-next {

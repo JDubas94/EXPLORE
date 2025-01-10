@@ -10,13 +10,13 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__top">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top__inner">
                     <a href="#" class="logo">
                         <img class="logo__img" src="images/logo.png" alt="logo images">
                     </a>
-                    <nav class="header__menu menu">
+                    <nav class="header-top__menu menu">
                         <button class="menu__btn">
                             <span></span>
                             <span></span>
@@ -24,64 +24,64 @@
                         </button>
                         <ul class="menu__list">
                             <li class="menu__list-item">
-                                <a class="menu__item-link" href="#">Почему мы?</a>
+                                <a class="menu__item-link" href="#about">Почему мы?</a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__item-link" href="#">Путевки</a>
+                                <a class="menu__item-link" href="#vouchers">Путевки</a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__item-link" href="#">Галерея</a>
+                                <a class="menu__item-link" href="#gallery">Галерея</a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__item-link" href="#">Гиды</a>
+                                <a class="menu__item-link" href="#guides">Гиды</a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__item-link" href="#">Отзывы</a>
+                                <a class="menu__item-link" href="#reviews">Отзывы</a>
                             </li>
                         </ul>
                     </nav>
-                    <button class="header__btn open-modal">Войти</button>
+                    <button class="header-top__btn open-modal">Войти</button>
                 </div>
             </div>
-            <div class="header-content">
-                <div class="container">
-                    <div class="header-content__inner">
-                        <h1 class="header-content__title">
-                            Пришло время новых приключений
-                        </h1>
-                        <p class="header-content__text">
-                            Чтобы получить максимальную отдачу от вашего приключения, вам нужно поехать туда, куда вам
-                            нравится
-                        </p>
-                        <a class="header-content__link">
-                            Выбрать тур
-                        </a>
-                    </div>
-                    <div class="header-content__search">
-                        <form class="header-content__form" action="#">
-                            <div class="header-content__form-search">
-                                <label class="header-content__label">
-                                    Локация
-                                </label>
-                                <input class="header-content__input-search" type="search"
-                                    placeholder="Куда хотите отправится?">
-                            </div>
-                            <div class="header-content__form-data">
-                                <label class="header-content__label">
-                                    Выберите дату
-                                </label>
-                                <input class="header-content__input-data" type="text" placeholder="13 Августа 2023"
-                                    onfocus="(this.type='date')" onblur="(this.type='text')">
-                            </div>
-                            <button class="header-content__btn-search"></button>
-                        </form>
-                    </div>
+        </div>
+        <div class="header-content">
+            <div class="container">
+                <div class="header-content__inner">
+                    <h1 class="header-content__title">
+                        Пришло время новых приключений
+                    </h1>
+                    <p class="header-content__text">
+                        Чтобы получить максимальную отдачу от вашего приключения, вам нужно поехать туда, куда вам
+                        нравится
+                    </p>
+                    <a class="header-content__link">
+                        Выбрать тур
+                    </a>
+                </div>
+                <div class="header-content__search">
+                    <form class="header-content__form" action="#">
+                        <div class="header-content__form-search">
+                            <label class="header-content__label">
+                                Локация
+                            </label>
+                            <input class="header-content__input-search" type="search"
+                                placeholder="Куда хотите отправится?">
+                        </div>
+                        <div class="header-content__form-data">
+                            <label class="header-content__label">
+                                Выберите дату
+                            </label>
+                            <input class="header-content__input-data" type="text" placeholder="13 Августа 2023"
+                                onfocus="(this.type='date')" onblur="(this.type='text')">
+                        </div>
+                        <button class="header-content__btn-search"></button>
+                    </form>
                 </div>
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="about-us">
+        <section class="about-us" id="about">
             <div class="container">
                 <div class="about-us__wrapper">
                     <h3 class="about-us__title">
@@ -127,7 +127,7 @@
                 </div>
             </div>
         </section>
-        <section class="vouchers-slider">
+        <section class="vouchers-slider" id="vouchers">
             <div class="container">
                 <div class="vouchers-slider__inner">
                     <h3 class="vouchers-slider__title">
@@ -409,7 +409,7 @@
                 </div>
             </div>
         </section>
-        <section class="gallery-slider">
+        <section class="gallery-slider" id="gallery">
             <div class="container">
                 <div class="gallery-slider__inner">
                     <h3 class="gallery-slider__title">
@@ -465,7 +465,7 @@
                 </div>
             </div>
         </section>
-        <section class="guides">
+        <section class="guides" id="guides">
             <div class="container">
                 <div class="guides__wrapper">
                     <h3 class="guides__title">
@@ -546,7 +546,7 @@
                 </div>
             </div>
         </section>
-        <section class="reviews-slider">
+        <section class="reviews-slider" id="reviews">
             <div class="container">
                 <div class="reviews-slider__wrapper">
                     <h3 class="reviews-slider__title">

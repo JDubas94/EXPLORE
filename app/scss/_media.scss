@@ -39,7 +39,7 @@
 
 
 @media (max-width: 1200px) {
-    .header {
+    .header-top {
 
         .menu__list-item+.menu__list-item {
             margin-left: 50px;
@@ -78,8 +78,8 @@
 }
 
 @media (max-width: 1020px) {
-    .header {
-        &__top {
+    .header-top {
+        &__inner {
             margin-left: 0;
         }
 
@@ -127,11 +127,11 @@
 }
 
 @media (max-width: 870px) {
-    .header {
+    .header-top {
         background-image: none;
         background-color: #B4CAD7;
 
-        &__top {
+        &__inner {
             position: relative;
             margin-bottom: 81px;
             flex-wrap: wrap;
@@ -583,7 +583,7 @@
 }
 
 @media (max-width: 470px) {
-    .header {
+    .header-top {
         &__btn {
             width: 93px;
         }
