@@ -56,6 +56,11 @@
 
 
 @media (max-width: 1100px) {
+    .header-top{
+        &__btn {
+            width: 135px;
+        }
+    }
     .about-us {
 
         &__items {
@@ -81,10 +86,6 @@
     .header-top {
         &__inner {
             margin-left: 0;
-        }
-
-        &__btn {
-            width: 135px;
         }
     }
 
@@ -123,17 +124,12 @@
             font-size: 34px;
         }
     }
-
-}
-
-@media (max-width: 870px) {
     .header-top {
         background-image: none;
         background-color: #B4CAD7;
 
         &__inner {
             position: relative;
-            margin-bottom: 81px;
             flex-wrap: wrap;
         }
 
@@ -266,6 +262,14 @@
             z-index: 5;
         }
 
+    }
+
+}
+
+@media (max-width: 870px) {
+    .header{
+        background-image: none;
+        background-color: #AFC9D6;
     }
 
     .header-content {

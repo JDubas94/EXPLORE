@@ -7,21 +7,22 @@
 
 
 
-.header{
+.header {
     background-image: url('../images/fon-header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-    
-.header-top{
+
+.header-top {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 999;
     background-color: #AFC9D6;
+
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -29,7 +30,7 @@
         margin-left: 47px;
         padding-top: 50px;
     }
-    
+
     &__btn {
         width: 200px;
         height: 58px;
@@ -146,7 +147,7 @@
         width: 62px;
         height: 62px;
         background-color: $accent;
-        border-radius: 5px;
+        border-radius: 10px;
         border: none;
         position: relative;
     }
@@ -180,7 +181,7 @@
         color: #000000;
     }
 
-    &__item-link:hover{
+    &__item-link:hover {
         border-bottom: 1px solid $accent;
     }
 
@@ -204,7 +205,8 @@
         width: 123px;
         height: 120px;
     }
-    &__logo-text{
+
+    &__logo-text {
         text-align: center;
     }
 
@@ -268,25 +270,26 @@
         background-color: #FFFFFF;
         position: relative;
     }
-    &__item-content{
+
+    &__item-content {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-}
+    }
 
     &__item::after {
-    content: '';
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 116px;
-    height: 116px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.24);
-    background-repeat: no-repeat;
-    background-position: center;
-}
+        content: '';
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 116px;
+        height: 116px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.24);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
     &__item--partners::after {
         background-image: url('../images/icon/partners-icon.svg');
@@ -460,7 +463,8 @@
         gap: 20px;
         padding-bottom: 152px;
     }
-    .slick-track{
+
+    .slick-track {
         overflow: hidden;
     }
 
@@ -605,7 +609,7 @@
 
     &__items {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
         margin-bottom: 58px;
     }
