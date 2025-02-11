@@ -10,8 +10,8 @@
 
 <body>
     <header class="header">
-        <div class="header-top">
-            <div class="container">
+        <div class="container">
+            <div class="header-top">
                 <div class="header-top__inner">
                     <a href="#" class="logo">
                         <img class="logo__img" src="images/logo.png" alt="logo images">
@@ -43,9 +43,7 @@
                     <button class="header-top__btn open-modal">Войти</button>
                 </div>
             </div>
-        </div>
-        <div class="header-content">
-            <div class="container">
+            <div class="header-content">
                 <div class="header-content__inner">
                     <h1 class="header-content__title">
                         Пришло время новых приключений
@@ -57,30 +55,29 @@
                     <a class="header-content__link">
                         Выбрать тур
                     </a>
-                </div>
-                <div class="header-content__search">
-                    <form class="header-content__form" action="#">
-                        <div class="header-content__form-search">
-                            <label class="header-content__label">
-                                Локация
-                            </label>
-                            <input class="header-content__input-search" type="search"
-                                placeholder="Куда хотите отправится?">
-                        </div>
-                        <div class="header-content__form-data">
-                            <label class="header-content__label">
-                                Выберите дату
-                            </label>
-                            <input class="header-content__input-data" type="text" placeholder="13 Августа 2023"
-                                onfocus="(this.type='date')" onblur="(this.type='text')">
-                        </div>
-                        <button class="header-content__btn-search"></button>
-                    </form>
+                    <div class="header-content__search">
+                        <form class="header-content__form" action="#">
+                            <div class="header-content__form-search">
+                                <label class="header-content__label">
+                                    Локация
+                                </label>
+                                <input class="header-content__input header-content__input-search" type="search"
+                                    placeholder="Куда хотите поехать?">
+                            </div>
+                            <div class="header-content__form-data">
+                                <label class="header-content__label">
+                                    Выберите дату
+                                </label>
+                                <input class="header-content__input header-content__input-data" type="text" placeholder="13 Августа 2023"
+                                    onfocus="(this.type='date')" onblur="(this.type='text')">
+                            </div>
+                            <button class="header-content__btn-search"></button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
     </header>
-    <main class="main">
+    <!-- <main class="main">
         <section class="about-us" id="about">
             <div class="container">
                 <div class="about-us__wrapper">
@@ -818,7 +815,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <dialog class="login-popup popup">
         <div class="login-popup__inner">
             <h3 class="popup__title">
@@ -932,7 +929,7 @@
             </div>
             <button class="popup__btn-close close-popup"></button>
         </div>
-    </dialog> -->
+    </dialog>
 
 
     <script src="js/main.min.js"></script>

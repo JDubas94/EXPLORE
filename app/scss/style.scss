@@ -66,18 +66,28 @@
     }
 
     &__form {
+        max-width: 702px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: #fff;
         border-radius: 10px;
         padding: 12px 25px;
+        margin-top: 208px;
+        flex-wrap: nowrap; 
+        gap: 50px;
     }
 
     &__form-search,
     &__form-data {
-        padding-inline: 65px 25px;
+        padding-left: 65px;
         position: relative;
+    }
+    &__form-search{
+        max-width: 285px;
+    }
+    &__form-data{
+        max-width: 209px;
     }
 
     &__form-search::before,
@@ -111,12 +121,12 @@
         width: 1px;
         height: 56px;
         background-color: #C4C4C4;
-        right: 0;
+        right: -25px;
         top: 0;
     }
 
-    &__form-search::placeholder,
-    &__form-data::placeholder {
+    &__input-data::placeholder,
+    &__input-search::placeholder {
         color: #C4C4C4;
     }
 
@@ -126,14 +136,11 @@
         @extend %quicksand-700;
     }
 
-    &__input-search {
-        width: 223px;
-        height: 25px;
+    &__input{
+        border: none;
     }
-
-    &__input-data {
-        width: 139px;
-        height: 27px;
+    &__input-search{
+        max-width: 218px;
     }
 
     &__btn-search {
@@ -142,19 +149,10 @@
         background-color: $accent;
         border-radius: 10px;
         border: none;
-        position: relative;
-    }
-
-    &__btn-search::before {
-        content: '';
-        position: absolute;
-        width: 46px;
-        height: 46px;
         background-image: url('../images/icon/search.svg');
         background-repeat: no-repeat;
         background-position: center;
-        top: 8px;
-        right: 8px;
+        cursor: pointer;
     }
 }
 
@@ -738,6 +736,7 @@
 }
 
 .login-popup {
+    display: none;
     position: fixed;
     margin: 0;
     padding: 0;
@@ -805,6 +804,7 @@
 
 
 .registration-popup {
+    display: none;
     position: fixed;
     margin: 0;
     padding: 0;
