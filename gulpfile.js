@@ -21,7 +21,9 @@ function browsersync() {
 
 
 function styles() {
-    return src('app/scss/style.scss')
+    return src([
+        'node_modules/swiper/swiper-bundle.css',
+        'app/scss/style.scss'])
         .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
@@ -53,6 +55,7 @@ function scripts() {
         'node_modules/jquery/dist/jquery.js',
         'node_modules/rateyo/src/jquery.rateyo.js',
         'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/swiper/swiper-bundle.js',
         'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))
