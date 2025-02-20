@@ -10,8 +10,9 @@
 
 <body>
     <header class="header">
-        <div class="header-top">
-            <div class="container">
+        <img class="header__img" src="images/header.png" alt="">
+        <div class="container">
+            <div class="header-top">
                 <div class="header-top__inner">
                     <a href="#" class="logo">
                         <img class="logo__img" src="images/logo.png" alt="logo images">
@@ -43,9 +44,7 @@
                     <button class="header-top__btn open-modal">Войти</button>
                 </div>
             </div>
-        </div>
-        <div class="header-content">
-            <div class="container">
+            <div class="header-content">
                 <div class="header-content__inner">
                     <h1 class="header-content__title">
                         Пришло время новых приключений
@@ -57,28 +56,28 @@
                     <a class="header-content__link">
                         Выбрать тур
                     </a>
-                </div>
-                <div class="header-content__search">
-                    <form class="header-content__form" action="#">
-                        <div class="header-content__form-search">
-                            <label class="header-content__label">
-                                Локация
-                            </label>
-                            <input class="header-content__input-search" type="search"
-                                placeholder="Куда хотите отправится?">
-                        </div>
-                        <div class="header-content__form-data">
-                            <label class="header-content__label">
-                                Выберите дату
-                            </label>
-                            <input class="header-content__input-data" type="text" placeholder="13 Августа 2023"
-                                onfocus="(this.type='date')" onblur="(this.type='text')">
-                        </div>
-                        <button class="header-content__btn-search"></button>
-                    </form>
+                    <div class="header-content__search">
+                        <form class="header-content__form" action="#">
+                            <div class="header-content__form-search">
+                                <label class="header-content__label">
+                                    Локация
+                                </label>
+                                <input class="header-content__input header-content__input-search" type="search"
+                                    placeholder="Куда хотите поехать?">
+                            </div>
+                            <div class="header-content__form-data">
+                                <label class="header-content__label">
+                                    Выберите дату
+                                </label>
+                                <input class="header-content__input header-content__input-data" type="text"
+                                    placeholder="13 Августа 2023" onfocus="(this.type='date')"
+                                    onblur="(this.type='text')">
+                            </div>
+                            <button class="header-content__btn-search"></button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
     </header>
     <main class="main">
         <section class="about-us" id="about">
@@ -129,282 +128,368 @@
         </section>
         <section class="vouchers-slider" id="vouchers">
             <div class="container">
-                <div class="vouchers-slider__inner">
+                <div class="vouchers-slider__wrapper">
                     <h3 class="vouchers-slider__title">
                         Туристические пакеты Explore
                     </h3>
                     <p class="vouchers-slider__text">
                         Получите полный пакет услуг, включающий все ваши потребности в поездках
                     </p>
-                    <div class="vouchers-slider__items">
-                        <div class="vouchers-slider__item">
-                            <div class="vouchers-slider__img-box">
-                                <span class="vouchers-slider__item-price">
-                                    25 000 UAH
-                                </span>
-                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-1.jpg"
-                                    alt="slider images">
-                                <span class="vouchers-slider__item-day">
-                                    2х дневный тур
-                                </span>
-                            </div>
-                            <h5 class="vouchers-slider__subtitle">
-                                Гора Пилатус
-                            </h5>
-                            <div class="vouchers-slider__item-location">
-                                <p class="vouchers-slider__item-country">
-                                    Швейцария
-                                </p>
-                                <div class="rating" data-rating="4.9">
-                                    <div class="star"></div>
-                                    <span class="rating__value"></span>
+                    <div class="vouchers-slider__inner swiper">
+                        <div class="vouchers-slider__items swiper-wrapper">
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        25 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-1.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        2х дневный тур
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Гора Пилатус
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Швейцария
+                                        </p>
+                                        <div class="rating" data-rating="4.9">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Забронировать
+                                    </button>
                                 </div>
                             </div>
-                            <button class="vouchers-slider__item-btn">
-                                Забронировать
-                            </button>
-                        </div>
-                        <div class="vouchers-slider__item">
-                            <div class="vouchers-slider__img-box">
-                                <span class="vouchers-slider__item-price">
-                                    37 000 UAH
-                                </span>
-                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-2.jpg"
-                                    alt="slider images">
-                                <span class="vouchers-slider__item-day">
-                                    3х дневный тур
-                                </span>
-                            </div>
-                            <h5 class="vouchers-slider__subtitle">
-                                Остров блууотерс
-                            </h5>
-                            <div class="vouchers-slider__item-location">
-                                <p class="vouchers-slider__item-country">
-                                    Дубай
-                                </p>
-                                <div class="rating" data-rating="4.8">
-                                    <div class="star"></div>
-                                    <span class="rating__value"></span>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        37 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-2.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        3х дневный тур
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Остров блууотерс
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Дубай
+                                        </p>
+                                        <div class="rating" data-rating="4.8">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Забронировать
+                                    </button>
                                 </div>
                             </div>
-                            <button class="vouchers-slider__item-btn">
-                                Забронировать
-                            </button>
-                        </div>
-                        <div class="vouchers-slider__item">
-                            <div class="vouchers-slider__img-box">
-                                <span class="vouchers-slider__item-price">
-                                    55 000 UAH
-                                </span>
-                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-3.jpg"
-                                    alt="slider images">
-                                <span class="vouchers-slider__item-day">
-                                    4х дневный тур
-                                </span>
-                            </div>
-                            <h5 class="vouchers-slider__subtitle">
-                                Деревня Санта-Клауса
-                            </h5>
-                            <div class="vouchers-slider__item-location">
-                                <p class="vouchers-slider__item-country">
-                                    Финляндия
-                                </p>
-                                <div class="rating" data-rating="5.0">
-                                    <div class="star"></div>
-                                    <span class="rating__value"></span>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        55 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-3.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        4х дневный тур
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Деревня Санта-Клауса
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Финляндия
+                                        </p>
+                                        <div class="rating" data-rating="5.0">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Забронировать
+                                    </button>
                                 </div>
                             </div>
-                            <button class="vouchers-slider__item-btn">
-                                Забронировать
-                            </button>
-                        </div>
-                        <div class="vouchers-slider__item">
-                            <div class="vouchers-slider__img-box">
-                                <span class="vouchers-slider__item-price">
-                                    33 000 UAH
-                                </span>
-                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-4.jpg"
-                                    alt="slider images">
-                                <span class="vouchers-slider__item-day">
-                                    3х дневный тур
-                                </span>
-                            </div>
-                            <h5 class="vouchers-slider__subtitle">
-                                Деревня Санта-Клауса
-                            </h5>
-                            <div class="vouchers-slider__item-location">
-                                <p class="vouchers-slider__item-country">
-                                    Финляндия
-                                </p>
-                                <div class="rating" data-rating="5.0">
-                                    <div class="star"></div>
-                                    <span class="rating__value"></span>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        33 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-4.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        3х дневный тур
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Деревня Санта-Клауса
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Финляндия
+                                        </p>
+                                        <div class="rating" data-rating="5.0">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Забронировать
+                                    </button>
                                 </div>
                             </div>
-                            <button class="vouchers-slider__item-btn">
-                                Забронировать
-                            </button>
-                        </div>
-                        <div class="vouchers-slider__item">
-                            <div class="vouchers-slider__img-box">
-                                <span class="vouchers-slider__item-price">
-                                    33 000 UAH
-                                </span>
-                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-5.jpg"
-                                    alt="slider images">
-                                <span class="vouchers-slider__item-day">
-                                    4х дневный тур
-                                </span>
-                            </div>
-                            <h5 class="vouchers-slider__subtitle">
-                                Древние храмы
-                            </h5>
-                            <div class="vouchers-slider__item-location">
-                                <p class="vouchers-slider__item-country">
-                                    Италия
-                                <div class="rating" data-rating="4.9">
-                                    <div class="star"></div>
-                                    <span class="rating__value"></span>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        33 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-5.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        4х дневный тур
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Древние храмы
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Италия
+                                        <div class="rating" data-rating="4.9">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Забронировать
+                                    </button>
                                 </div>
                             </div>
-                            <button class="vouchers-slider__item-btn">
-                                Забронировать
-                            </button>
-                        </div>
-                        <div class="vouchers-slider__item">
-                            <div class="vouchers-slider__img-box">
-                                <span class="vouchers-slider__item-price">
-                                    25 000 UAH
-                                </span>
-                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-1.jpg"
-                                    alt="slider images">
-                                <span class="vouchers-slider__item-day">
-                                    2х дневный тур
-                                </span>
-                            </div>
-                            <h5 class="vouchers-slider__subtitle">
-                                Гора Пилатус
-                            </h5>
-                            <div class="vouchers-slider__item-location">
-                                <p class="vouchers-slider__item-country">
-                                    Швейцария
-                                </p>
-                                <div class="rating" data-rating="4.9">
-                                    <div class="star"></div>
-                                    <span class="rating__value"></span>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        25 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-1.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        2х дневный тур
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Гора Пилатус
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Швейцария
+                                        </p>
+                                        <div class="rating" data-rating="4.9">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Забронировать
+                                    </button>
                                 </div>
                             </div>
-                            <button class="vouchers-slider__item-btn">
-                                Забронировать
-                            </button>
-                        </div>
-                        <div class="vouchers-slider__item">
-                            <div class="vouchers-slider__img-box">
-                                <span class="vouchers-slider__item-price">
-                                    37 000 UAH
-                                </span>
-                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-2.jpg"
-                                    alt="slider images">
-                                <span class="vouchers-slider__item-day">
-                                    3х дневный тур
-                                </span>
-                            </div>
-                            <h5 class="vouchers-slider__subtitle">
-                                Остров блууотерс
-                            </h5>
-                            <div class="vouchers-slider__item-location">
-                                <p class="vouchers-slider__item-country">
-                                    Дубай
-                                </p>
-                                <div class="rating" data-rating="4.8">
-                                    <div class="star"></div>
-                                    <span class="rating__value"></span>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        37 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-2.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        3х дневный тур
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Остров блууотерс
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Дубай
+                                        </p>
+                                        <div class="rating" data-rating="4.8">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Забронировать
+                                    </button>
                                 </div>
                             </div>
-                            <button class="vouchers-slider__item-btn">
-                                Забронировать
-                            </button>
-                        </div>
-                        <div class="vouchers-slider__item">
-                            <div class="vouchers-slider__img-box">
-                                <span class="vouchers-slider__item-price">
-                                    55 000 UAH
-                                </span>
-                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-3.jpg"
-                                    alt="slider images">
-                                <span class="vouchers-slider__item-day">
-                                    4х дневный тур
-                                </span>
-                            </div>
-                            <h5 class="vouchers-slider__subtitle">
-                                Деревня Санта-Клауса
-                            </h5>
-                            <div class="vouchers-slider__item-location">
-                                <p class="vouchers-slider__item-country">
-                                    Финляндия
-                                </p>
-                                <div class="rating" data-rating="5.0">
-                                    <div class="star"></div>
-                                    <span class="rating__value"></span>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        55 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-3.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        4х дневный тур
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Деревня Санта-Клауса
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Финляндия
+                                        </p>
+                                        <div class="rating" data-rating="5.0">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Забронировать
+                                    </button>
                                 </div>
                             </div>
-                            <button class="vouchers-slider__item-btn">
-                                Забронировать
-                            </button>
-                        </div>
-                        <div class="vouchers-slider__item">
-                            <div class="vouchers-slider__img-box">
-                                <span class="vouchers-slider__item-price">
-                                    33 000 UAH
-                                </span>
-                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-4.jpg"
-                                    alt="slider images">
-                                <span class="vouchers-slider__item-day">
-                                    3х дневный тур
-                                </span>
-                            </div>
-                            <h5 class="vouchers-slider__subtitle">
-                                Деревня Санта-Клауса
-                            </h5>
-                            <div class="vouchers-slider__item-location">
-                                <p class="vouchers-slider__item-country">
-                                    Финляндия
-                                </p>
-                                <div class="rating" data-rating="5.0">
-                                    <div class="star"></div>
-                                    <span class="rating__value"></span>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        33 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-4.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        3х дневный тур
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Деревня Санта-Клауса
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Финляндия
+                                        </p>
+                                        <div class="rating" data-rating="5.0">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Забронировать
+                                    </button>
                                 </div>
                             </div>
-                            <button class="vouchers-slider__item-btn">
-                                Забронировать
-                            </button>
-                        </div>
-                        <div class="vouchers-slider__item">
-                            <div class="vouchers-slider__img-box">
-                                <span class="vouchers-slider__item-price">
-                                    33 000 UAH
-                                </span>
-                                <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-5.jpg"
-                                    alt="slider images">
-                                <span class="vouchers-slider__item-day">
-                                    4х дневный тур
-                                </span>
-                            </div>
-                            <h5 class="vouchers-slider__subtitle">
-                                Древние храмы
-                            </h5>
-                            <div class="vouchers-slider__item-location">
-                                <p class="vouchers-slider__item-country">
-                                    Италия
-                                <div class="rating" data-rating="4.9">
-                                    <div class="star"></div>
-                                    <span class="rating__value"></span>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        33 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-5.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        4х дневный тур
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Древние храмы
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Италия
+                                        <div class="rating" data-rating="4.9">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Забронировать
+                                    </button>
                                 </div>
                             </div>
-                            <button class="vouchers-slider__item-btn">
-                                Забронировать
-                            </button>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        25 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-1.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        2х дневный тур
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Гора Пилатус
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Швейцария
+                                        </p>
+                                        <div class="rating" data-rating="4.9">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Забронировать
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        37 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-2.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        3х дневный тур
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Остров блууотерс
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Дубай
+                                        </p>
+                                        <div class="rating" data-rating="4.8">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Забронировать
+                                    </button>
+                                </div>
+                            </div>
+
                         </div>
+                        <div class="vouchers-slider__pagination">
+                            <button class="vouchers-slider__button swiper-button-prev active"></button>
+                            <button class="vouchers-slider__button swiper-button-next"></button>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -462,7 +547,12 @@
                                 alt="gallery images">
                         </div>
                     </div>
+                    <div class="gallery-slider__pagination">
+                        <button class="gallery-slider__button gallery-slider__button-prev"></button>
+                        <button class="gallery-slider__button gallery-slider__button-next"></button>
+                    </div>
                 </div>
+            </div>
             </div>
         </section>
         <section class="guides" id="guides">
@@ -575,7 +665,8 @@
                                     Воздушные шары
                                 </h5>
                                 <p class="reviews-slider__text">
-                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный
+                                    путь
                                     позволяет выполнить важные задания по разработке благоприятных перспектив.
                                 </p>
                                 <div class="reviews-slider__rating-box">
@@ -608,7 +699,8 @@
                                     Воздушные шары
                                 </h5>
                                 <p class="reviews-slider__text">
-                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный
+                                    путь
                                     позволяет выполнить важные задания по разработке благоприятных перспектив.
                                 </p>
                                 <div class="reviews-slider__rating-box">
@@ -624,7 +716,8 @@
                                     Воздушные шары
                                 </h5>
                                 <p class="reviews-slider__text">
-                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный
+                                    путь
                                     позволяет выполнить важные задания по разработке благоприятных перспектив.
                                 </p>
                                 <div class="reviews-slider__rating-box">
@@ -640,7 +733,8 @@
                                     Воздушные шары
                                 </h5>
                                 <p class="reviews-slider__text">
-                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный
+                                    путь
                                     позволяет выполнить важные задания по разработке благоприятных перспектив.
                                 </p>
                                 <div class="reviews-slider__rating-box">
@@ -656,7 +750,8 @@
                                     Воздушные шары
                                 </h5>
                                 <p class="reviews-slider__text">
-                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный
+                                    путь
                                     позволяет выполнить важные задания по разработке благоприятных перспектив.
                                 </p>
                                 <div class="reviews-slider__rating-box">
@@ -672,7 +767,8 @@
                                     Воздушные шары
                                 </h5>
                                 <p class="reviews-slider__text">
-                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный
+                                    путь
                                     позволяет выполнить важные задания по разработке благоприятных перспектив.
                                 </p>
                                 <div class="reviews-slider__rating-box">
@@ -688,7 +784,8 @@
                                     Воздушные шары
                                 </h5>
                                 <p class="reviews-slider__text">
-                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный
+                                    путь
                                     позволяет выполнить важные задания по разработке благоприятных перспектив.
                                 </p>
                                 <div class="reviews-slider__rating-box">
@@ -704,7 +801,8 @@
                                     Воздушные шары
                                 </h5>
                                 <p class="reviews-slider__text">
-                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный
+                                    путь
                                     позволяет выполнить важные задания по разработке благоприятных перспектив.
                                 </p>
                                 <div class="reviews-slider__rating-box">
@@ -720,7 +818,8 @@
                                     Воздушные шары
                                 </h5>
                                 <p class="reviews-slider__text">
-                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный
+                                    путь
                                     позволяет выполнить важные задания по разработке благоприятных перспектив.
                                 </p>
                                 <div class="reviews-slider__rating-box">
@@ -736,7 +835,8 @@
                                     Воздушные шары
                                 </h5>
                                 <p class="reviews-slider__text">
-                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь
+                                    Наше дело не так однозначно, как может показаться: выбранный нами инновационный
+                                    путь
                                     позволяет выполнить важные задания по разработке благоприятных перспектив.
                                 </p>
                                 <div class="reviews-slider__rating-box">
@@ -748,11 +848,130 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="reviews-slider__pagination">
+                            <button class="reviews-slider__button reviews-slider__button-prev"></button>
+                            <button class="reviews-slider__button reviews-slider__button-next"></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
+        <dialog class="login-popup popup">
+            <div class="login-popup__inner">
+                <h3 class="popup__title">
+                    Вход
+                </h3>
+                <div class="login-popup__items">
+                    <div class="login-popup__item-form popup__form">
+                        <form class="login-popup__form" action="#">
+                            <input class="login-popup__input login-popup__input-email" type="email" placeholder="Email"
+                                required>
+                            <input class="login-popup__input login-popup__input-password" type="password"
+                                placeholder="Пароль" required>
+                            <label class="login-popup__label checkbox">
+                                <div class="checkbox__input-box">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__span"></span>
+                                </div>
+                                <span class="login-popup__form-text">Запомнить меня</span>
+                            </label>
+                            <button class="popup__btn">Войти</button>
+                        </form>
+                        <div class="login-popup__info">
+                            <div class="login-popup__item-info">
+                                <span class="login-popup__item-text">Нет учетной записи?</span>
+                                <a class="login-popup__item-link open-popup" href="#">Регистрация</a>
+                            </div>
+                            <div class="login-popup__item-info">
+                                <span class="login-popup__item-text">Забыли пароль?</span>
+                                <a class="login-popup__item-link" href="#">Восстановить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-popup__item-social popup-social">
+                        <p class="login-popup__subtitle">
+                            Или авторизуйтесь через:
+                        </p>
+                        <ul class="popup-social__list">
+                            <li class="popup-social__item">
+                                <a class="popup-social__link" href="#">
+                                    <img class="popup-social__img" src="images/icon/apple.svg" alt="apple icon">
+                                </a>
+                            </li>
+                            <li class="popup-social__item">
+                                <a class="popup-social__link" href="#">
+                                    <img class="popup-social__img" src="images/icon/facebook-icon.svg"
+                                        alt="facebook icon">
+                                </a>
+                            </li>
+                            <li class="popup-social__item">
+                                <a class="popup-social__link" href="#">
+                                    <img class="popup-social__img" src="images/icon/google.svg" alt="google icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="popup__btn-close close-modal"></button>
+            </div>
+        </dialog>
+        <dialog class="registration-popup popup">
+            <div class="registration-popup__inner">
+                <h3 class="registration-popup__title popup__title ">
+                    Создать аккаунт
+                </h3>
+                <div class="registration-popup__items">
+                    <div class="registration-popup__item-form popup__form">
+                        <form class="registration-popup__form" action="#">
+                            <input class="registration-popup__input" type="text" placeholder="Имя" required>
+                            <input class="registration-popup__input" type="text" placeholder="Фамилия" required>
+                            <input class="registration-popup__input" type="tel" placeholder="Номер телефона" required>
+                            <input class="registration-popup__input" type="email" placeholder="Email" required>
+                            <input class="registration-popup__input registration-popup__input-password" type="password"
+                                placeholder="Пароль" required>
+                            <label class="registration-popup__label checkbox">
+                                <div class="checkbox__input-box">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__span"></span>
+                                </div>
+                                <span class="registration-popup__form-text">
+                                    Я согласен на сбор и обработку моих персональных данных
+                                </span>
+                            </label>
+                            <button class="popup__btn registration-popup__btn">Зарегистрироваться</button>
+                        </form>
+                        <div class="registration-popup__text-box">
+                            <p class="registration-popup__text">У вас есть аккаунт?</p>
+                            <a class="registration-popup__link" href="#">Войти</a>
+                        </div>
+                    </div>
+                    <div class="registration-popup__item popup-social">
+                        <p class="registration-popup__subtitle">
+                            Или авторизуйтесь через:
+                        </p>
+                        <ul class="popup-social__list">
+                            <li class="popup-social__item registration-popup__list-item">
+                                <a class="popup-social__link" href="#">
+                                    <img class="popup-social__img" src="images/icon/apple.svg" alt="apple icon">
+                                </a>
+                            </li>
+                            <li class="popup-social__item registration-popup__list-item">
+                                <a class="popup-social__link" href="#">
+                                    <img class="popup-social__img" src="images/icon/facebook-icon.svg"
+                                        alt="facebook icon">
+                                </a>
+                            </li>
+                            <li class="popup-social__item registration-popup__list-item">
+                                <a class="popup-social__link" href="#">
+                                    <img class="popup-social__img" src="images/icon/google.svg" alt="google icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="popup__btn-close close-popup"></button>
+            </div>
+        </dialog>
 
 
     </main>
@@ -819,120 +1038,6 @@
             </div>
         </div>
     </footer>
-    <dialog class="login-popup popup">
-        <div class="login-popup__inner">
-            <h3 class="popup__title">
-                Вход
-            </h3>
-            <div class="login-popup__items">
-                <div class="login-popup__item-form popup__form">
-                    <form class="login-popup__form" action="#">
-                        <input class="login-popup__input login-popup__input-email" type="email" placeholder="Email"
-                            required>
-                        <input class="login-popup__input login-popup__input-password" type="password"
-                            placeholder="Пароль" required>
-                        <label class="login-popup__label checkbox">
-                            <div class="checkbox__input-box">
-                                <input class="checkbox__input" type="checkbox">
-                                <span class="checkbox__span"></span>
-                            </div>
-                            <span class="login-popup__form-text">Запомнить меня</span>
-                        </label>
-                        <button class="popup__btn">Войти</button>
-                    </form>
-                    <div class="login-popup__info">
-                        <div class="login-popup__item-info">
-                            <span class="login-popup__item-text">Нет учетной записи?</span>
-                            <a class="login-popup__item-link open-popup" href="#">Регистрация</a>
-                        </div>
-                        <div class="login-popup__item-info">
-                            <span class="login-popup__item-text">Забыли пароль?</span>
-                            <a class="login-popup__item-link" href="#">Восстановить</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="login-popup__item-social popup-social">
-                    <p class="login-popup__subtitle">
-                        Или авторизуйтесь через:
-                    </p>
-                    <ul class="popup-social__list">
-                        <li class="popup-social__item">
-                            <a class="popup-social__link" href="#">
-                                <img class="popup-social__img" src="images/icon/apple.svg" alt="apple icon">
-                            </a>
-                        </li>
-                        <li class="popup-social__item">
-                            <a class="popup-social__link" href="#">
-                                <img class="popup-social__img" src="images/icon/facebook-icon.svg" alt="facebook icon">
-                            </a>
-                        </li>
-                        <li class="popup-social__item">
-                            <a class="popup-social__link" href="#">
-                                <img class="popup-social__img" src="images/icon/google.svg" alt="google icon">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <button class="popup__btn-close close-modal"></button>
-        </div>
-    </dialog>
-    <dialog class="registration-popup popup">
-        <div class="registration-popup__inner">
-            <h3 class="registration-popup__title popup__title ">
-                Создать аккаунт
-            </h3>
-            <div class="registration-popup__items">
-                <div class="registration-popup__item-form popup__form">
-                    <form class="registration-popup__form" action="#">
-                        <input class="registration-popup__input" type="text" placeholder="Имя" required>
-                        <input class="registration-popup__input" type="text" placeholder="Фамилия" required>
-                        <input class="registration-popup__input" type="tel" placeholder="Номер телефона" required>
-                        <input class="registration-popup__input" type="email" placeholder="Email" required>
-                        <input class="registration-popup__input registration-popup__input-password" type="password"
-                            placeholder="Пароль" required>
-                        <label class="registration-popup__label checkbox">
-                            <div class="checkbox__input-box">
-                                <input class="checkbox__input" type="checkbox">
-                                <span class="checkbox__span"></span>
-                            </div>
-                            <span class="registration-popup__form-text">
-                                Я согласен на сбор и обработку моих персональных данных
-                            </span>
-                        </label>
-                        <button class="popup__btn registration-popup__btn">Зарегистрироваться</button>
-                    </form>
-                    <div class="registration-popup__text-box">
-                        <p class="registration-popup__text">У вас есть аккаунт?</p>
-                        <a class="registration-popup__link" href="#">Войти</a>
-                    </div>
-                </div>
-                <div class="registration-popup__item popup-social">
-                    <p class="registration-popup__subtitle">
-                        Или авторизуйтесь через:
-                    </p>
-                    <ul class="popup-social__list">
-                        <li class="popup-social__item registration-popup__list-item">
-                            <a class="popup-social__link" href="#">
-                                <img class="popup-social__img" src="images/icon/apple.svg" alt="apple icon">
-                            </a>
-                        </li>
-                        <li class="popup-social__item registration-popup__list-item">
-                            <a class="popup-social__link" href="#">
-                                <img class="popup-social__img" src="images/icon/facebook-icon.svg" alt="facebook icon">
-                            </a>
-                        </li>
-                        <li class="popup-social__item registration-popup__list-item">
-                            <a class="popup-social__link" href="#">
-                                <img class="popup-social__img" src="images/icon/google.svg" alt="google icon">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <button class="popup__btn-close close-popup"></button>
-        </div>
-    </dialog> -->
 
 
     <script src="js/main.min.js"></script>

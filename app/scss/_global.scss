@@ -91,7 +91,7 @@ body {
         border-bottom: 1px solid $borderColor;
     }
     &__btn-close {
-        top: 47px;
+        top: 40px;
         right: 20px;
         position: absolute;
         width: 40px;
@@ -134,7 +134,7 @@ body {
         border: none;
         background-color: $accent;
         border-radius: 10px;
-        margin-bottom: 18px;
+        margin-bottom: 20px;
     }
     &__form{
             width: 329px;
@@ -148,5 +148,10 @@ body {
         background-color: $borderColor;
         top: -15px;
         right: -44px;
+    }
+}
+@media (max-width: 700px){
+    .checkbox{
+        margin-bottom: 20px;
     }
 }
