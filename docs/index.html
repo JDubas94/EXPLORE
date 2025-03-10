@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPLORE</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__img" src="images/header.png" alt="">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-top__inner">
+                    <a href="#" class="logo">
+                        <img class="logo__img" src="images/logo.png" alt="logo images">
+                    </a>
+                    <nav class="header-top__menu menu">
+                        <button class="menu__btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#about">Why us?</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#vouchers">Vouchers</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#gallery">Gallery</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#guides">Guides</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#reviews">Reviews</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header-top__btn open-modal">Login</button>
+                </div>
+            </div>
+            <div class="header-content">
+                <div class="header-content__inner">
+                    <h1 class="header-content__title">
+                        It's time for new adventures
+                    </h1>
+                    <p class="header-content__text">
+                        To get the most out of your adventure, you need to go where you like
+                    </p>
+                    <a class="header-content__link">
+                        Select a tour
+                    </a>
+                    <div class="header-content__search">
+                        <form class="header-content__form" action="#">
+                            <div class="header-content__form-search">
+                                <label class="header-content__label">
+                                    Location
+                                </label>
+                                <input class="header-content__input header-content__input-search" type="search"
+                                    placeholder="Where do you want to go?">
+                            </div>
+                            <div class="header-content__form-data">
+                                <label class="header-content__label">
+                                    Select date
+                                </label>
+                                <input class="header-content__input header-content__input-data" type="text"
+                                    placeholder="13 August 2023" onfocus="(this.type='date')"
+                                    onblur="(this.type='text')">
+                            </div>
+                            <button class="header-content__btn-search"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <main class="main">
+        <section class="about-us" id="about">
+            <div class="container">
+                <div class="about-us__wrapper">
+                    <h3 class="about-us__title">
+                        Why us?
+                    </h3>
+                    <p class="about-us__text-top">
+                        Our support and assistance will make your trip unforgettable
+                    </p>
+                    <div class="about-us__items">
+                        <div class="about-us__item about-us__item--partners">
+                            <div class="about-us__item-content">
+                                <h5 class="about-us__subtitle">
+                                    Proven and reliable
+                                </h5>
+                                <p class="about-us__text">
+                                    We're trusted by 20 million travelers just<br> like you around the world.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-us__item about-us__item--support">
+                            <div class="about-us__item-content">
+                                <h5 class="about-us__subtitle">
+                                    Reliable support
+                                </h5>
+                                <p class="about-us__text">
+                                    We are here for you. Contact us anytime by phone, email or chat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-us__item about-us__item--travel">
+                            <div class="about-us__item-content">
+                                <h5 class="about-us__subtitle">
+                                    Travel partner
+                                </h5>
+                                <p class="about-us__text">
+                                    Your search ends here. With us, your trip will be safe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="vouchers-slider" id="vouchers">
+            <div class="container">
+                <div class="vouchers-slider__wrapper">
+                    <h3 class="vouchers-slider__title">
+                        Explore Travel Packages
+                    </h3>
+                    <p class="vouchers-slider__text">
+                        Get a complete package that covers all your travel needs
+                    </p>
+                    <div class="vouchers-slider__inner swiper">
+                        <div class="vouchers-slider__items swiper-wrapper">
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        25 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-1.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        2 day tour
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Mount Pilatus
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Switzerland
+                                        </p>
+                                        <div class="rating" data-rating="4.9">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Book now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        37 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-2.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        3 day tour
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Bluewaters Island
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Dubai
+                                        </p>
+                                        <div class="rating" data-rating="4.8">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Book now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        55 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-3.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        4 day tour
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Santa Claus Village
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Finland
+                                        </p>
+                                        <div class="rating" data-rating="5.0">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Book now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        33 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-4.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        3 day tour
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Santa Claus Village
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Finland
+                                        </p>
+                                        <div class="rating" data-rating="5.0">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Book now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        33 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-5.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        4 day tour
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Ancient temples
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Italy
+                                        <div class="rating" data-rating="4.9">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Book now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        25 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-1.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        2 day tour
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Mount Pilatus
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Switzerland
+                                        </p>
+                                        <div class="rating" data-rating="4.9">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Book now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        37 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-2.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        3 day tour
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Bluewaters Island
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Dubai
+                                        </p>
+                                        <div class="rating" data-rating="4.8">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Book now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        55 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-3.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        4 day tour
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Santa Claus Village
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Finland
+                                        </p>
+                                        <div class="rating" data-rating="5.0">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Book now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        33 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-4.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        3 day tour
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Santa Claus Village
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Finland
+                                        </p>
+                                        <div class="rating" data-rating="5.0">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Book now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        33 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-5.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        4 day tour
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Ancient temples
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Italy
+                                        <div class="rating" data-rating="4.9">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Book now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        25 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-1.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        Mount Pilatus
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Mount Pilatus
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Switzerland
+                                        </p>
+                                        <div class="rating" data-rating="4.9">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Book now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="vouchers-slider__item swiper-slide">
+                                <div class="vouchers-slider__img-box">
+                                    <span class="vouchers-slider__item-price">
+                                        37 000 UAH
+                                    </span>
+                                    <img class="vouchers-slider__item-img" src="images/vouchers-slider/slider-2.jpg"
+                                        alt="slider images">
+                                    <span class="vouchers-slider__item-day">
+                                        3 day tour
+                                    </span>
+                                </div>
+                                <div class="vouchers-slider__info">
+                                    <h5 class="vouchers-slider__subtitle">
+                                        Bluewaters Island
+                                    </h5>
+                                    <div class="vouchers-slider__item-location">
+                                        <p class="vouchers-slider__item-country">
+                                            Dubai
+                                        </p>
+                                        <div class="rating" data-rating="4.8">
+                                            <div class="star"></div>
+                                            <span class="rating__value"></span>
+                                        </div>
+                                    </div>
+                                    <button class="vouchers-slider__item-btn">
+                                        Book now
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="vouchers-slider__pagination">
+                            <button class="vouchers-slider__button swiper-button-prev"></button>
+                            <button class="vouchers-slider__button swiper-button-next"></button>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-slider" id="gallery">
+            <div class="container">
+                <div class="gallery-slider__inner">
+                    <h3 class="gallery-slider__title">
+                        Photo Gallery
+                    </h3>
+                    <p class="gallery-slider__text">
+                        Let's go on a journey to get rid of boredom and make your day brighter
+                    </p>
+                    <div class="gallery-slider__wrapper">
+                        <div class="gallery-slider__slide gallery-slider__slide-1">
+                            <img class="gallery-slider__slide-img item1" src="images/gallery-slider/1.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item2" src="images/gallery-slider/2.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item3" src="images/gallery-slider/3.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item4" src="images/gallery-slider/4.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item5" src="images/gallery-slider/5.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item6" src="images/gallery-slider/6.png"
+                                alt="gallery images">
+                        </div>
+                        <div class="gallery-slider__slide gallery-slider__slide-2">
+                            <img class="gallery-slider__slide-img item7" src="images/gallery-slider/7.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item8" src="images/gallery-slider/8.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item9" src="images/gallery-slider/9.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item10" src="images/gallery-slider/10.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item11" src="images/gallery-slider/11.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item12" src="images/gallery-slider/12.png"
+                                alt="gallery images">
+                        </div>
+                        <div class="gallery-slider__slide gallery-slider__slide-3">
+                            <img class="gallery-slider__slide-img item13" src="images/gallery-slider/13.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item14" src="images/gallery-slider/14.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item15" src="images/gallery-slider/15.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item16" src="images/gallery-slider/16.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item17" src="images/gallery-slider/17.png"
+                                alt="gallery images">
+                            <img class="gallery-slider__slide-img item18" src="images/gallery-slider/18.png"
+                                alt="gallery images">
+                        </div>
+                    </div>
+                    <div class="gallery-slider__pagination">
+                        <button class="gallery-slider__button gallery-slider__button-prev"></button>
+                        <button class="gallery-slider__button gallery-slider__button-next"></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="guides" id="guides">
+            <div class="container">
+                <div class="guides__wrapper">
+                    <h3 class="guides__title">
+                        Our professional guides
+                    </h3>
+                    <div class="guides__inner">
+                        <div class="guides__items">
+                            <div class="guides__item">
+                                <div class="guides__img-box" style="background-image: url(images/guides/1.png);">
+                                    <div class="guides__box-price">
+                                        <span class="guides__item-price">3100</span>
+                                        <span class="guides__item-currency">UAH</span>
+                                    </div>
+                                </div>
+                                <div class="guides__rating-box">
+                                    <p class="guides__item-name">Albert Nikolaevich </p>
+                                    <div class="rating" data-rating="4.9">
+                                        <div class="star"></div>
+                                        <span class="rating__value"></span>
+                                    </div>
+                                </div>
+                                <p class="guides__item-language">Languages: Ukrainian</p>
+                            </div>
+                            <div class="guides__item">
+                                <div class="guides__img-box" style="background-image: url(images/guides/2.png);">
+                                    <div class="guides__box-price">
+                                        <span class="guides__item-price">3700</span>
+                                        <span class="guides__item-currency">UAH</span>
+                                    </div>
+                                </div>
+                                <div class="guides__rating-box">
+                                    <p class="guides__item-name">Alexander Smirnov</p>
+                                    <div class="rating" data-rating="5.0">
+                                        <div class="star"></div>
+                                        <span class="rating__value"></span>
+                                    </div>
+                                </div>
+                                <p class="guides__item-language">Languages: Ukrainian, English</p>
+                            </div>
+                            <div class="guides__item">
+                                <div class="guides__img-box" style="background-image: url(images/guides/3.png);">
+                                    <div class="guides__box-price">
+                                        <span class="guides__item-price">3800</span>
+                                        <span class="guides__item-currency">UAH</span>
+                                    </div>
+                                </div>
+                                <div class="guides__rating-box">
+                                    <p class="guides__item-name">Vladislav Popov</p>
+                                    <div class="rating" data-rating="5.0">
+                                        <div class="star"></div>
+                                        <span class="rating__value"></span>
+                                    </div>
+                                </div>
+                                <p class="guides__item-language">Languages: Ukrainian, English</p>
+                            </div>
+                            <div class="guides__item">
+                                <div class="guides__img-box" style="background-image: url(images/guides/4.png);">
+                                    <div class="guides__box-price">
+                                        <span class="guides__item-price">5900</span>
+                                        <span class="guides__item-currency">UAH</span>
+                                    </div>
+                                </div>
+                                <div class="guides__rating-box">
+                                    <p class="guides__item-name">Anatoly Kuznetsov</p>
+                                    <div class="rating" data-rating="4.9">
+                                        <div class="star"></div>
+                                        <span class="rating__value"></span>
+                                    </div>
+                                </div>
+                                <p class="guides__item-language">Languages: Ukrainian, English, German, Portuguese,
+                                    Spanish</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guides__item-link">
+                        <a class="guides__link" href="#">Show all</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews-slider" id="reviews">
+            <div class="container">
+                <div class="reviews-slider__wrapper">
+                    <h3 class="reviews-slider__title">
+                        Customer reviews of our service
+                    </h3>
+                    <div class="reviews-slider__inner">
+                        <div class="reviews-slider__slider">
+                            <div class="reviews-slider__item">
+                                <h5 class="reviews-slider__subtitle">
+                                    Mount Pilatus
+                                </h5>
+                                <p class="reviews-slider__text">
+                                    In general, of course, strengthening and developing the internal structure requires
+                                    an analysis of innovative methods of process management.
+                                </p>
+                                <div class="reviews-slider__rating-box">
+                                    <div class="reviews-slider__item-name">
+                                        <img class="reviews-slider__item-img" src="images/reviews/1.jpg"
+                                            alt="review images">
+                                        Roman Bukin
+                                    </div>
+                                    <div class="star" data-rateyo-rating="5"></div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__item">
+                                <h5 class="reviews-slider__subtitle">
+                                    Balloons
+                                </h5>
+                                <p class="reviews-slider__text">
+                                    Our business is not as straightforward as it may seem: the innovative path we have
+                                    chosen allows us to carry out important tasks in developing favorable prospects.
+                                </p>
+                                <div class="reviews-slider__rating-box">
+                                    <div class="reviews-slider__item-name">
+                                        <img class="reviews-slider__item-img" src="images/reviews/2.jpg"
+                                            alt="reviews images">
+                                        Svetlana Bukina
+                                    </div>
+                                    <div class="star" data-rateyo-rating="4"></div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__item">
+                                <h5 class="reviews-slider__subtitle">
+                                    Ancient temples
+                                </h5>
+                                <p class="reviews-slider__text">
+                                    It is generally accepted that shareholders of the largest companies can be equally
+                                    left to their own devices.
+                                </p>
+                                <div class="reviews-slider__rating-box">
+                                    <div class="reviews-slider__item-name">
+                                        <img class="reviews-slider__item-img" src="images/reviews/3.jpg"
+                                            alt="reviews images">
+                                        Gennady Bukin
+                                    </div>
+                                    <div class="star" data-rateyo-rating="5"></div>
+                                </div>
+                            </div>
+
+                            <div class="reviews-slider__item">
+                                <h5 class="reviews-slider__subtitle">
+                                    Balloons
+                                </h5>
+                                <p class="reviews-slider__text">
+                                    Our business is not as straightforward as it may seem: the innovative path we have
+                                    chosen allows us to carry out important tasks in developing favorable prospects.
+                                </p>
+                                <div class="reviews-slider__rating-box">
+                                    <div class="reviews-slider__item-name">
+                                        <img class="reviews-slider__item-img" src="images/reviews/2.jpg"
+                                            alt="reviews images">
+                                        Svetlana Bukina
+                                    </div>
+                                    <div class="star" data-rateyo-rating="4"></div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__item">
+                                <h5 class="reviews-slider__subtitle">
+                                    Balloons
+                                </h5>
+                                <p class="reviews-slider__text">
+                                    Our business is not as straightforward as it may seem: the innovative path we have
+                                    chosen allows us to carry out important tasks in developing favorable prospects.
+                                </p>
+                                <div class="reviews-slider__rating-box">
+                                    <div class="reviews-slider__item-name">
+                                        <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="reviews images">
+                                        Svetlana Bukina
+                                    </div>
+                                    <div class="star" data-rateyo-rating="4"></div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__item">
+                                <h5 class="reviews-slider__subtitle">
+                                    Balloons
+                                </h5>
+                                <p class="reviews-slider__text">
+                                    Our business is not as straightforward as it may seem: the innovative path we have
+                                    chosen allows us to carry out important tasks in developing favorable prospects.
+                                </p>
+                                <div class="reviews-slider__rating-box">
+                                    <div class="reviews-slider__item-name">
+                                        <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="reviews images">
+                                        Svetlana Bukina
+                                    </div>
+                                    <div class="star" data-rateyo-rating="4"></div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__item">
+                                <h5 class="reviews-slider__subtitle">
+                                    Balloons
+                                </h5>
+                                <p class="reviews-slider__text">
+                                    Our business is not as straightforward as it may seem: the innovative path we have
+                                    chosen allows us to carry out important tasks in developing favorable prospects.
+                                </p>
+                                <div class="reviews-slider__rating-box">
+                                    <div class="reviews-slider__item-name">
+                                        <img class="reviews-slider__item-img" src="images/reviews/3.jpg" alt="reviews images">
+                                        Gennady Bukin
+                                    </div>
+                                    <div class="star" data-rateyo-rating="4"></div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__item">
+                                <h5 class="reviews-slider__subtitle">
+                                    Balloons
+                                </h5>
+                                <p class="reviews-slider__text">
+                                    Our business is not as straightforward as it may seem: the innovative path we have
+                                    chosen allows us to carry out important tasks in developing favorable prospects.
+                                </p>
+                                <div class="reviews-slider__rating-box">
+                                    <div class="reviews-slider__item-name">
+                                        <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="reviews images">
+                                        Svetlana Bukina
+                                    </div>
+                                    <div class="star" data-rateyo-rating="4"></div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__item">
+                                <h5 class="reviews-slider__subtitle">
+                                    Balloons
+                                </h5>
+                                <p class="reviews-slider__text">
+                                    Our business is not as straightforward as it may seem: the innovative path we have
+                                    chosen allows us to carry out important tasks in developing favorable prospects.
+                                </p>
+                                <div class="reviews-slider__rating-box">
+                                    <div class="reviews-slider__item-name">
+                                        <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="reviews images">
+                                        Svetlana Bukina
+                                    </div>
+                                    <div class="star" data-rateyo-rating="4"></div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__item">
+                                <h5 class="reviews-slider__subtitle">
+                                    Balloons
+                                </h5>
+                                <p class="reviews-slider__text">
+                                    Our business is not as straightforward as it may seem: the innovative path we have
+                                    chosen allows us to carry out important tasks in developing favorable prospects.
+                                </p>
+                                <div class="reviews-slider__rating-box">
+                                    <div class="reviews-slider__item-name">
+                                        <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="reviews images">
+                                        Svetlana Bukina
+                                    </div>
+                                    <div class="star" data-rateyo-rating="4"></div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__item">
+                                <h5 class="reviews-slider__subtitle">
+                                    Balloons
+                                </h5>
+                                <p class="reviews-slider__text">
+                                    Our business is not as straightforward as it may seem: the innovative path we have
+                                    chosen allows us to carry out important tasks in developing favorable prospects.
+                                </p>
+                                <div class="reviews-slider__rating-box">
+                                    <div class="reviews-slider__item-name">
+                                        <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="reviews images">
+                                        Svetlana Bukina
+                                    </div>
+                                    <div class="star" data-rateyo-rating="4"></div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__item">
+                                <h5 class="reviews-slider__subtitle">
+                                    Balloons
+                                </h5>
+                                <p class="reviews-slider__text">
+                                    Our business is not as straightforward as it may seem: the innovative path we have
+                                    chosen allows us to carry out important tasks in developing favorable prospects.
+                                </p>
+                                <div class="reviews-slider__rating-box">
+                                    <div class="reviews-slider__item-name">
+                                        <img class="reviews-slider__item-img" src="images/reviews/2.jpg" alt="reviews images">
+                                        Svetlana Bukina
+                                    </div>
+                                    <div class="star" data-rateyo-rating="4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-slider__pagination">
+                            <button class="reviews-slider__button reviews-slider__button-prev"></button>
+                            <button class="reviews-slider__button reviews-slider__button-next"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <dialog class="login-popup popup">
+            <div class="login-popup__inner">
+                <h3 class="popup__title">
+                    Entrance
+                </h3>
+                <div class="login-popup__items">
+                    <div class="login-popup__item-form popup__form">
+                        <form class="login-popup__form" action="#">
+                            <input class="login-popup__input login-popup__input-email" type="email" placeholder="Email"
+                                required>
+                            <input class="login-popup__input login-popup__input-password" type="password"
+                                placeholder="Password" required>
+                            <label class="login-popup__label checkbox">
+                                <div class="checkbox__input-box">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__span"></span>
+                                </div>
+                                <span class="login-popup__form-text">Remember me</span>
+                            </label>
+                            <button class="popup__btn">Login</button>
+                        </form>
+                        <div class="login-popup__info">
+                            <div class="login-popup__item-info">
+                                <span class="login-popup__item-text">Don't have an account?</span>
+                                <a class="login-popup__item-link open-popup" href="#">Registration</a>
+                            </div>
+                            <div class="login-popup__item-info">
+                                <span class="login-popup__item-text">Forgot your password?</span>
+                                <a class="login-popup__item-link" href="#">Restore</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-popup__item-social popup-social">
+                        <p class="login-popup__subtitle">
+                            Or log in via:
+                        </p>
+                        <ul class="popup-social__list">
+                            <li class="popup-social__item">
+                                <a class="popup-social__link" href="#">
+                                    <img class="popup-social__img" src="images/icon/apple.svg" alt="apple icon">
+                                </a>
+                            </li>
+                            <li class="popup-social__item">
+                                <a class="popup-social__link" href="#">
+                                    <img class="popup-social__img" src="images/icon/facebook-icon.svg"
+                                        alt="facebook icon">
+                                </a>
+                            </li>
+                            <li class="popup-social__item">
+                                <a class="popup-social__link" href="#">
+                                    <img class="popup-social__img" src="images/icon/google.svg" alt="google icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="popup__btn-close close-modal"></button>
+            </div>
+        </dialog>
+        <dialog class="registration-popup popup">
+            <div class="registration-popup__inner">
+                <h3 class="registration-popup__title popup__title ">
+                    Create an account
+                </h3>
+                <div class="registration-popup__items">
+                    <div class="registration-popup__item-form popup__form">
+                        <form class="registration-popup__form" action="#">
+                            <input class="registration-popup__input" type="text" placeholder="Name" required>
+                            <input class="registration-popup__input" type="text" placeholder="Surname" required>
+                            <input class="registration-popup__input" type="tel" placeholder="Phone number" required>
+                            <input class="registration-popup__input" type="email" placeholder="Email" required>
+                            <input class="registration-popup__input registration-popup__input-password" type="password"
+                                placeholder="Password" required>
+                            <label class="registration-popup__label checkbox">
+                                <div class="checkbox__input-box">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__span"></span>
+                                </div>
+                                <span class="registration-popup__form-text">
+                                    I agree to the collection and processing of my personal data
+                                </span>
+                            </label>
+                            <button class="popup__btn registration-popup__btn">Register</button>
+                        </form>
+                        <div class="registration-popup__text-box">
+                            <p class="registration-popup__text">Do you have an account?</p>
+                            <a class="registration-popup__link" href="#">Login</a>
+                        </div>
+                    </div>
+                    <div class="registration-popup__item popup-social">
+                        <p class="registration-popup__subtitle">
+                            Or log in via:
+                        </p>
+                        <ul class="popup-social__list">
+                            <li class="popup-social__item registration-popup__list-item">
+                                <a class="popup-social__link" href="#">
+                                    <img class="popup-social__img" src="images/icon/apple.svg" alt="apple icon">
+                                </a>
+                            </li>
+                            <li class="popup-social__item registration-popup__list-item">
+                                <a class="popup-social__link" href="#">
+                                    <img class="popup-social__img" src="images/icon/facebook-icon.svg"
+                                        alt="facebook icon">
+                                </a>
+                            </li>
+                            <li class="popup-social__item registration-popup__list-item">
+                                <a class="popup-social__link" href="#">
+                                    <img class="popup-social__img" src="images/icon/google.svg" alt="google icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="popup__btn-close close-popup"></button>
+            </div>
+        </dialog>
+
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a href="#" class="logo footer__logo-link">
+                        <img class="logo__img" src="images/logo.png" alt="logo images">
+                    </a>
+                    <p class="footer__logo-text">
+                        @ 2023 - EXPLORE
+                    </p>
+                </div>
+                <div class="footer__contacts">
+                    <h5 class="footer__title">
+                        Contacts:
+                    </h5>
+                    <ul class="footer__contacts-list">
+                        <li class="footer__list-item">
+                            Address: Academician Efremova 8
+                        </li>
+                        <li class="footer__list-item">
+                            Number:
+                            <a class="footer__item-link" href="tel:+380663661216">
+                                +380(66) 366-12-16
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            Email:
+                            <a class="footer__item-link" href="mailto:Exploretravel@gmail.com">
+                                Exploretravel@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h3 class="footer__title footer__title-social">
+                        Follow us
+                    </h3>
+                    <ul class="footer__list-social">
+                        <li class="footer__item-social">
+                            <a class="footer__item-link" href="#">
+                                <img class="footer__item-img" src="images/icon/fecebook.svg" alt="social icon">
+                            </a>
+                        </li>
+                        <li class="footer__item-social">
+                            <a class="footer__item-link" href="#">
+                                <img class="footer__item-img" src="images/icon/youtube.svg" alt="social icon">
+                            </a>
+                        </li>
+                        <li class="footer__item-social">
+                            <a class="footer__item-link" href="#">
+                                <img class="footer__item-img" src="images/icon/telegram.svg" alt="social icon">
+                            </a>
+                        </li>
+                        <li class="footer__item-social">
+                            <a class="footer__item-link" href="#">
+                                <img class="footer__item-img" src="images/icon/instagram.svg" alt="social icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
