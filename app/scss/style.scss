@@ -21,7 +21,7 @@
         max-width: none;
         object-fit: cover;
         z-index: 0;
-        opacity: 0.6;
+        opacity: 1;
         pointer-events: none;
     }
 }
@@ -57,13 +57,14 @@
     }
 
     &__title {
-        font-size: clamp(24px, 5vw, 64px);
-        max-width: clamp(576px, 75vw, 750px);
+        font-size: clamp(32px, 5vw, 64px);
+        // max-width: clamp(544px, 54vw, 750px);
+        max-width: clamp(337px, 54vw, 750px);
         margin-bottom: 20px;
     }
 
     &__text {
-        max-width: clamp(200px, 70vw, 705px);
+        max-width: clamp(323px, 48vw, 705px);
         margin-bottom: 48px;
     }
 
@@ -103,7 +104,7 @@
     }
 
     &__form-data {
-        max-width: 209px;
+        max-width: 215px;
     }
 
     &__form-search::before,
@@ -156,8 +157,13 @@
         border: none;
     }
 
+    &__input-data{
+        max-width: 150px;
+    }
+
     &__input-search {
         max-width: 218px;
+        background-color: #fff;
     }
 
     &__btn-search {
@@ -335,9 +341,9 @@
         max-width: 100%;
     }
 
-    &__items {
-        margin-bottom: 77px;
-    }
+    // &__items {
+    //     margin-bottom: 77px;
+    // }
 
     &__item {
         max-width: 100%;
@@ -413,7 +419,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 40px;
+        margin-top: 77px;
     }
 
     &__button {
@@ -611,7 +618,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 80px;
-        gap: 30px;
+        gap: 20px;
     }
     &__button {
         width: 50px;
@@ -738,7 +745,7 @@
         position: relative;
     }
     .slick-slide {
-        margin-right: 20px;
+        margin-right: 23px;
     }
 
     &__subtitle {
