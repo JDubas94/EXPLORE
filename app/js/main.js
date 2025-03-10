@@ -110,7 +110,7 @@ $(function () {
     $('.reviews-slider__slider').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
-        infinite: false,
+        infinite: true,
         arrows: true,
         prevArrow: '.reviews-slider__button-prev',
         nextArrow: '.reviews-slider__button-next',
@@ -134,7 +134,7 @@ $(function () {
       });
 
     $('.gallery-slider__wrapper').slick({
-        infinite: false,
+        infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         variableWidth: false,
