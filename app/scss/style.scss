@@ -163,7 +163,8 @@
 
     &__input-search {
         max-width: 218px;
-        background-color: #fff;
+        appearance: none;
+        background-color: #fff !important;
     }
 
     &__btn-search {
