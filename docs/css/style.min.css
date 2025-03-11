@@ -1533,6 +1533,10 @@ body {
 }
 .header-content__input-search {
   max-width: 218px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fff !important;
 }
 .header-content__btn-search {
   width: 62px;
@@ -2594,6 +2598,7 @@ body {
     gap: 20px;
   }
   .header-content__form-search, .header-content__form-data {
+    max-width: 100%;
     width: 100%;
   }
   .header-content__form-search::after, .header-content__form-data::after {
@@ -2602,6 +2607,7 @@ body {
   .header-content__input-search, .header-content__input-data {
     border: none;
     max-width: 100%;
+    width: 100%;
   }
   .header-content__btn-search {
     width: 100%;
@@ -2819,13 +2825,13 @@ body {
     width: 100%;
   }
   .reviews-slider__item {
-    height: 255px;
+    height: 275px;
   }
 }
 @media (max-width: 420px) {
   .about-us__item {
     padding-top: 110px;
-    height: 300px;
+    height: 270px;
     font-size: 16px;
   }
   .about-us__item::after {
